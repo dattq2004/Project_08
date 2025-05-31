@@ -1,3 +1,4 @@
+@use "../abstracts";
 html {
     --header-bg-cl: #eeeeee;
     --text-cl: #1a162e;
@@ -6,4 +7,8 @@ html {
     --top-act-bg-cl: #fff;
     --top-act-seperate-bg-cl: #ededf6;
     --top-act-shadow: #ededf633;
+
+    @include abstracts.breakpoint(lg) {
+        --header-bg-cl: #fff;
+    }
 }
