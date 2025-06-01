@@ -8,11 +8,9 @@
     color: var(--dropdown-text-cl);
 
     &__inner {
-        --inner-max-height: min(582px, 100vh - 144px);
         --inner-padding: 30px;
 
         position: relative;
-        max-height: var(--inner-max-height);
         padding: var(--inner-padding);
         border-radius: 20px;
         background: var(--dropdown-bg-cl);
@@ -29,11 +27,9 @@
 }
 
 .top-menu {
-    max-height: calc(var(--inner-max-height) - var(--inner-padding) * 2);
-
     &__main {
         width: 292px;
-        max-height: inherit;
+        max-height: calc(min(582px, 100vh - 144px) - var(--inner-padding) * 2);
         border-right: 1px solid var(--border-right-cl);
         overflow-y: auto;
     }
