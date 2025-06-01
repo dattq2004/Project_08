@@ -1,6 +1,8 @@
 @use "../abstracts";
 html {
+    --body-bg-cl: #f6f6f6;
     --header-bg-cl: #eeeeee;
+    --header-shadow-cl: #ededf633;
     --text-cl: #1a162e;
     --icon-cl: brightness(0) saturate(100%) invert(7%) sepia(16%)
         saturate(4973%) hue-rotate(225deg) brightness(87%) contrast(93%);
@@ -8,7 +10,17 @@ html {
     --top-act-seperate-bg-cl: #ededf6;
     --top-act-shadow: #ededf633;
 
+    // Dropdown
+    --dropdown-bg-cl: #fff;
+    --dropdown-bg-shadow-cl: rgba(200, 200, 200, 0.4);
+    --border-right-cl: #d2d1d6;
+    --icon-2-cl: brightness(0) saturate(100%) invert(9%) sepia(8%)
+        saturate(4425%) hue-rotate(210deg) brightness(90%) contrast(97%);
     @include abstracts.breakpoint(lg) {
         --header-bg-cl: #fff;
+    }
+
+    @include abstracts.breakpoint(md) {
+        background: #eeeeee;
     }
 }
