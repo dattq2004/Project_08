@@ -1771,5 +1771,11 @@ html.dark {
   padding-left: 0;
   height: calc(var(--max-height-inner) - var(--inner-padding) * 2);
 }
+@media (max-width: 991.98px) {
+  .sub-menu-l-all {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */

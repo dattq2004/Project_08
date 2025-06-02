@@ -180,5 +180,10 @@
         position: initial;
         padding-left: 0;
         height: calc(var(--max-height-inner) - var(--inner-padding) * 2);
+
+        @include abstracts.breakpoint(lg) {
+            grid-template-columns: 1fr;
+            height: auto;
+        }
     }
 }
