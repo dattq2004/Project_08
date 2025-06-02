@@ -82,6 +82,7 @@
             flex-direction: column;
             align-items: flex-start;
             overflow-y: auto;
+            overscroll-behavior: contain;
             background: transparent;
             max-height: calc(100% - 30px);
         }
