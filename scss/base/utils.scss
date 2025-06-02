@@ -14,7 +14,7 @@ $display-values: block, flex, grid, none, inline-flex, inline-block;
     $infix: if($size, "-#{$size}", "");
     @each $display in $display-values {
         .d#{$infix}-#{$display} {
-            display: $display;
+            display: $display !important;
         }
     }
 }

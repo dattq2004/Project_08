@@ -1,7 +1,7 @@
 <div class="container">
     <div class="top_bar">
         <!-- More -->
-        <button class="top_bar__more d-none d-lg-block">
+        <button class="top_bar__more d-none d-lg-block js-toggle" toggle-target="#navbar">
             <img src="./assets/icons/more.svg" alt="" class="more-icon icon" />
         </button>
         <!-- Logo -->
@@ -11,8 +11,8 @@
         </a>
 
         <!-- Navbar -->
-        <div class="navbar">
-            <button class="navbar__close-btn d-none d-lg-block">
+        <nav class="navbar hide" id="navbar">
+            <button class="navbar__close-btn js-toggle d-none d-lg-block" toggle-target="#navbar">
                 <img src="./assets/icons/arrow-left.svg" alt="" class="navbar__close-img" />
             </button>
             <ul class="navbar__list js-dropdown-list">
@@ -21,13 +21,13 @@
                         >Departments
                         <img src="./assets/icons/arrow-down.svg" alt="" class="navbar__img icon" />
                     </a>
-                    <div hidden class="dropdown js-dropdown">
+                    <div class="dropdown js-dropdown">
                         <div class="dropdown__inner">
                             <div class="top-menu">
                                 <div class="top-menu__main">
                                     <!-- Menu Column -->
                                     <div class="menu-column">
-                                        <div class="menu-column__icon">
+                                        <div class="menu-column__icon d-lg-none">
                                             <img
                                                 src="./assets/img/category/cate-1-1.svg"
                                                 alt=""
@@ -40,7 +40,7 @@
                                             />
                                         </div>
                                         <div class="menu-column__content">
-                                            <h2 class="menu-column__heading">
+                                            <h2 class="menu-column__heading d-lg-none">
                                                 <a href="#!" class="menu-column__heading--link">Apartment</a>
                                             </h2>
                                             <ul class="menu-column__list js-menu-list">
@@ -1075,9 +1075,9 @@
                     </div>
                 </li>
             </ul>
-        </div>
+        </nav>
 
-        <div class="navbar-overlay"></div>
+        <div class="navbar-overlay js-toggle" toggle-target="#navbar"></div>
 
         <!-- Action -->
         <div class="top-act">

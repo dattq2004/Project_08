@@ -44,10 +44,13 @@ input,
 textarea,
 select,
 button,
-span {
+span,
+a,
+img {
     font-family: inherit;
     font-size: inherit;
     color: inherit;
+    -webkit-tap-highlight-color: transparent;
 }
 
 button {
