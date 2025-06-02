@@ -1358,6 +1358,8 @@ html {
   --icon-cl: brightness(0) saturate(100%) invert(7%) sepia(16%) saturate(4973%) hue-rotate(225deg) brightness(87%)
       contrast(93%);
   --navbar-bg-cl: #fff;
+  --navbar-text-lg-cl: #1a162e;
+  --navbar-icon-lg-cl: #fff;
   --navbar-shadow-cl: #c8c8c866;
   --top-act-bg-cl: #fff;
   --top-act-seperate-bg-cl: #ededf6;
@@ -1386,6 +1388,9 @@ html.dark {
   --text-cl: #ffffff;
   --icon-cl: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(1%) hue-rotate(198deg) brightness(107%)
       contrast(101%);
+  --navbar-text-lg-cl: #b9babe;
+  --navbar-icon-lg-cl: brightness(0) saturate(100%) invert(81%) sepia(8%) saturate(95%) hue-rotate(191deg)
+      brightness(93%) contrast(84%);
   --navbar-bg-cl: #292e39;
   --navbar-shadow-cl: #171c2866;
   --top-act-bg-cl: #292e39;
@@ -1447,22 +1452,30 @@ html.dark {
     inset: 0 50% 0 0;
     z-index: 6;
     padding: 20px 0;
+    border-radius: 0px 20px 20px 0px;
     margin-left: 0;
     translate: -100%;
     transition: translate 0.5s;
+    color: var(--navbar-text-lg-cl);
     background-color: var(--navbar-bg-cl);
-    box-shadow: 0px 40px 90px 20px var(--navbar-shadow-cl);
   }
   .navbar.show {
     translate: 0;
+    box-shadow: 0px 40px 90px 20px var(--navbar-shadow-cl);
   }
   .navbar.show ~ .navbar-overlay {
     opacity: 1;
     visibility: visible;
   }
 }
+@media (max-width: 575.98px) {
+  .navbar {
+    inset: 0 20% 0 0;
+  }
+}
 .navbar__close-btn {
   padding: 10px 20px;
+  filter: var(--navbar-icon-lg-cl);
 }
 .navbar__list {
   display: flex;
@@ -1475,6 +1488,11 @@ html.dark {
     overflow-y: auto;
     background: transparent;
     max-height: calc(100% - 30px);
+  }
+}
+@media (max-width: 767.98px) {
+  .navbar__list {
+    max-height: calc(100% - 117px);
   }
 }
 .navbar__item:hover .dropdown {
@@ -1520,6 +1538,26 @@ html.dark {
   .navbar__img {
     rotate: -90deg;
     transition: 0.4s;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .nav-btn {
+    height: 44px;
+    padding: 10px 20px;
+    align-items: center;
+  }
+  .nav-btn__icon {
+    filter: var(--navbar-icon-lg-cl);
+  }
+  .nav-btn__title, .nav-btn__qnt {
+    margin-left: 16px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 146.667%;
+  }
+  .nav-btn__qnt {
+    margin-left: auto;
   }
 }
 
