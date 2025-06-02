@@ -1436,6 +1436,7 @@ html.dark {
   color: var(--dropdown-text-cl);
 }
 .dropdown__inner {
+  --max-height-inner: min(582px, 100vh - 158px);
   --inner-padding: 30px;
   position: relative;
   padding: var(--inner-padding);
@@ -1456,7 +1457,7 @@ html.dark {
 }
 .top-menu__main {
   width: 292px;
-  height: calc(min(582px, 100vh - 158px) - var(--inner-padding) * 2);
+  height: calc(var(--max-height-inner) - var(--inner-padding) * 2);
   border-right: 1px solid var(--border-right-cl);
   overflow-y: auto;
 }
@@ -1530,6 +1531,13 @@ html.dark {
   display: none;
   grid-template-columns: repeat(3, 1fr);
   overflow-y: auto;
+}
+.sub-menu-l-all {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  position: initial;
+  padding-left: 0;
+  height: calc(var(--max-height-inner) - var(--inner-padding) * 2);
 }
 
 /*# sourceMappingURL=main.css.map */

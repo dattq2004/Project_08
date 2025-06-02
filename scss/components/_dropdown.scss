@@ -9,6 +9,8 @@
     color: var(--dropdown-text-cl);
 
     &__inner {
+        --max-height-inner: min(582px, 100vh - 158px);
+
         --inner-padding: 30px;
 
         position: relative;
@@ -31,7 +33,7 @@
     position: relative;
     &__main {
         width: 292px;
-        height: calc(min(582px, 100vh - 158px) - var(--inner-padding) * 2);
+        height: calc(var(--max-height-inner) - var(--inner-padding) * 2);
         border-right: 1px solid var(--border-right-cl);
         overflow-y: auto;
     }
@@ -124,4 +126,12 @@
     grid-template-columns: repeat(3, 1fr);
 
     overflow-y: auto;
+
+    &-l-all {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        position: initial;
+        padding-left: 0;
+        height: calc(var(--max-height-inner) - var(--inner-padding) * 2);
+    }
 }
