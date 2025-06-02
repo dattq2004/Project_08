@@ -167,7 +167,6 @@
     overflow-y: auto;
 
     @include abstracts.breakpoint(lg) {
-        display: block;
         position: initial;
         grid-template-columns: 1fr;
         margin-top: 7px;

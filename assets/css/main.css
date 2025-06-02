@@ -1757,7 +1757,6 @@ html.dark {
 }
 @media (max-width: 991.98px) {
   .sub-menu {
-    display: block;
     position: initial;
     grid-template-columns: 1fr;
     margin-top: 7px;
