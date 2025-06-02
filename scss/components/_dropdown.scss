@@ -1,6 +1,7 @@
 @use "../abstracts";
 
 .dropdown {
+    display: none;
     position: absolute;
     left: 0;
     width: min(1240px, 100%);
@@ -90,16 +91,12 @@
     }
 
     &__item {
-        &:hover .sub-menu {
-            display: grid;
-        }
-
         &:hover > .menu-column__link {
             font-weight: 500;
             color: #0071dc;
         }
 
-        &--active {
+        &--active .sub-menu {
             display: grid;
         }
     }
