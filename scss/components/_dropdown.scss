@@ -41,7 +41,7 @@
     column-gap: 14px;
 
     + .menu-column {
-        margin-top: var(--inner-padding);
+        margin-top: calc(var(--inner-padding) - 7px);
     }
 
     &__icon {
@@ -49,6 +49,10 @@
         flex-shrink: 0;
         width: 36px;
         height: 36px;
+
+        @include abstracts.breakpoint(xl) {
+            display: none;
+        }
 
         &-1 {
             width: 30px;
@@ -94,6 +98,10 @@
             font-weight: 500;
             color: #0071dc;
         }
+
+        &--active {
+            display: grid;
+        }
     }
 
     &__link {
@@ -115,7 +123,6 @@
     inset: 0 0 0 292px;
 
     padding-left: var(--inner-padding);
-
     display: none;
     grid-template-columns: repeat(3, 1fr);
 

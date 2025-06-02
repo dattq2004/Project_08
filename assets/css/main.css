@@ -1462,13 +1462,18 @@ html.dark {
   column-gap: 14px;
 }
 .menu-column + .menu-column {
-  margin-top: var(--inner-padding);
+  margin-top: calc(var(--inner-padding) - 7px);
 }
 .menu-column__icon {
   position: relative;
   flex-shrink: 0;
   width: 36px;
   height: 36px;
+}
+@media (max-width: 1199.98px) {
+  .menu-column__icon {
+    display: none;
+  }
 }
 .menu-column__icon-1 {
   width: 30px;
@@ -1502,6 +1507,9 @@ html.dark {
 .menu-column__item:hover > .menu-column__link {
   font-weight: 500;
   color: #0071dc;
+}
+.menu-column__item--active {
+  display: grid;
 }
 .menu-column__link {
   display: block;
