@@ -9,10 +9,8 @@
     color: var(--dropdown-text-cl);
 
     @include abstracts.breakpoint(lg) {
-        display: block;
         position: initial;
         padding-top: 0;
-        // background-color: transparent;
     }
 
     &__inner {

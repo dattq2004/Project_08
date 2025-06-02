@@ -1484,6 +1484,15 @@ html.dark {
   .navbar__item {
     width: 100%;
   }
+  .navbar__item:hover .dropdown {
+    display: none;
+  }
+  .navbar__item--active .dropdown {
+    display: block !important;
+  }
+  .navbar__item--active .navbar__img {
+    rotate: 0deg;
+  }
 }
 .navbar__link {
   display: flex;
@@ -1506,6 +1515,12 @@ html.dark {
 .navbar__img {
   margin-top: 3px;
   cursor: pointer;
+}
+@media (max-width: 991.98px) {
+  .navbar__img {
+    rotate: -90deg;
+    transition: 0.4s;
+  }
 }
 
 .navbar-overlay {
@@ -1619,7 +1634,6 @@ html.dark {
 }
 @media (max-width: 991.98px) {
   .dropdown {
-    display: block;
     position: initial;
     padding-top: 0;
   }
