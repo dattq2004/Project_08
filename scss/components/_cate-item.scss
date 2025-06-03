@@ -3,9 +3,22 @@
 .cate-item {
     display: flex;
     column-gap: 20px;
-    padding: 20px 26px 20px 20px;
+    padding: 20px;
     border-radius: 16px;
+
+    height: 100%;
     background: var(--cate-item-bg-cl);
+
+    @include abstracts.breakpoint(xl) {
+        flex-direction: column;
+        row-gap: 15px;
+        align-items: center;
+        text-align: center;
+    }
+
+    @include abstracts.breakpoint(md) {
+        flex-direction: initial;
+    }
 
     &__thumb {
         width: 116px;
@@ -13,6 +26,11 @@
         object-fit: contain;
         border-radius: 10px;
         background: var(--cate-item-thumb-bg-cl);
+
+        @include abstracts.breakpoint(md) {
+            width: 88px;
+            height: 88px;
+        }
     }
 
     &__info {
@@ -20,7 +38,15 @@
         flex-direction: column;
         justify-content: center;
 
-        padding-right: 20px;
+        padding-right: 22px;
+
+        @include abstracts.breakpoint(xxl) {
+            padding-right: 0;
+        }
+
+        @include abstracts.breakpoint(md) {
+            align-items: flex-start;
+        }
     }
 
     &__title {
@@ -28,6 +54,11 @@
         font-weight: 700;
         line-height: 145.455%;
         color: var(--cate-text-heading-cl);
+
+        @include abstracts.breakpoint(md) {
+            font-size: 1.8rem;
+            line-height: 144.444%;
+        }
     }
 
     &__desc {
@@ -35,5 +66,10 @@
         font-size: 1.6rem;
         line-height: 150%;
         color: var(--cate-text-desc-cl);
+
+        @include abstracts.breakpoint(md) {
+            font-size: 1.4rem;
+            line-height: 142.857%;
+        }
     }
 }

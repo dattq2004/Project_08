@@ -41,6 +41,10 @@
         left: 5.2%;
 
         width: 17.8%;
+
+        @include abstracts.breakpoint(md) {
+            width: 26%;
+        }
     }
 
     &__num {

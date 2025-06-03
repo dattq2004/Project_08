@@ -29,11 +29,28 @@ html {
     --cate-text-desc-cl: #1a162e;
     --cate-item-thumb-bg-cl: #fff;
 
+    // Filter Button
+    --filter-bg-cl: #fff;
+    --filter-text-cl: #6c6c72;
+    --filter-icon-cl: brightness(0) saturate(100%) invert(5%) sepia(17%) saturate(6798%) hue-rotate(234deg)
+        brightness(89%) contrast(91%);
+
+    // Product Card
+    --product-card-bg-cl: #fff;
+    --product-card-text-cl: #1a162e;
+    --product-card-market-cl: #9e9da8;
+    --product-card-shadow-cl: rgba(237, 237, 246, 0.2);
+
+    // Like Button
+    --like-btn-bg-cl: #fff;
+    --like-btn-shadow-cl: rgba(124, 124, 124, 0.2);
+
     @include abstracts.breakpoint(lg) {
         --header-bg-cl: #fff;
     }
 
     @include abstracts.breakpoint(md) {
         background: #eeeeee;
+        --cate-item-bg-cl: #fff;
     }
 }

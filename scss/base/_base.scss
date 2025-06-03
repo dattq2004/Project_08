@@ -63,3 +63,10 @@ button {
 .icon {
     filter: var(--icon-cl);
 }
+
+.container {
+    @include abstracts.breakpoint(sm) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}

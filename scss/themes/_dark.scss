@@ -31,4 +31,19 @@ html.dark {
     --cate-text-heading-cl: #fff;
     --cate-text-desc-cl: #fff;
     --cate-item-thumb-bg-cl: #292e39;
+
+    // Filter Button
+    --filter-bg-cl: #171c28;
+    --filter-text-cl: #fff;
+    --filter-icon-cl: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7454%) hue-rotate(111deg)
+        brightness(107%) contrast(100%);
+
+    // Product Card
+    --product-card-bg-cl: #171c28;
+    --product-card-text-cl: #fff;
+    --product-card-shadow-cl: rgba(0, 0, 0, 0.2);
+
+    // Like Button
+    --like-btn-bg-cl: #292e39;
+    --like-btn-shadow-cl: rgba(124, 124, 124, 0.2);
 }

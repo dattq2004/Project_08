@@ -9,7 +9,6 @@
     }
 
     &__heading {
-        margin-bottom: 20px;
         font-size: 2.4rem;
         font-weight: 700;
         line-height: 141.667%;
@@ -17,6 +16,22 @@
     }
 
     &__cate {
+        margin-top: 20px;
         --grid-gutter-x: 51px;
+
+        @include abstracts.breakpoint(lg) {
+            --grid-gutter-x: 25px;
+        }
+
+        @include abstracts.breakpoint(md) {
+            --grid-gutter-y: 20px;
+        }
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 21px;
     }
 }
