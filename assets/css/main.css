@@ -131,12 +131,12 @@ table {
 }
 
 .row > *, .container-fluid, .container {
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: calc(var(--grid-gutter-x) * 0.5);
+  padding-left: calc(var(--grid-gutter-x) * 0.5);
 }
 
 .container-fluid, .container {
-  --grid-gutter-x: 0;
+  --grid-gutter-x: 30px;
   --grid-gutter-y: 0;
   width: 100%;
   margin-left: auto;
@@ -845,7 +845,7 @@ table {
 }
 @media (max-width: 767.98px) {
   .container {
-    max-width: 720px;
+    max-width: 540px;
   }
   .row-cols-md-1 > * {
     flex: 0 0 auto;
@@ -1373,6 +1373,10 @@ html {
   --border-right-cl: #d2d1d6;
   --icon-2-cl: brightness(0) saturate(100%) invert(9%) sepia(8%) saturate(4425%) hue-rotate(210deg) brightness(90%)
       contrast(97%);
+  --cate-item-bg-cl: #eee;
+  --cate-text-heading-cl: #000;
+  --cate-text-desc-cl: #1a162e;
+  --cate-item-thumb-bg-cl: #fff;
 }
 @media (max-width: 991.98px) {
   html {
@@ -1408,6 +1412,10 @@ html.dark {
   --icon-2-cl: brightness(0) saturate(100%) invert(100%) sepia(41%) saturate(519%) hue-rotate(179deg) brightness(101%)
       contrast(97%);
   --dropdown-text-cl: #b9babe;
+  --cate-item-bg-cl: #171c28;
+  --cate-text-heading-cl: #fff;
+  --cate-text-desc-cl: #fff;
+  --cate-item-thumb-bg-cl: #292e39;
 }
 
 .header {
@@ -1901,6 +1909,58 @@ html.dark {
 }
 .slideshow__slider:after {
   right: -14px;
+}
+
+.cate-item {
+  display: flex;
+  column-gap: 20px;
+  padding: 20px 26px 20px 20px;
+  border-radius: 16px;
+  background: var(--cate-item-bg-cl);
+}
+.cate-item__thumb {
+  width: 116px;
+  height: 116px;
+  object-fit: contain;
+  border-radius: 10px;
+  background: var(--cate-item-thumb-bg-cl);
+}
+.cate-item__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 20px;
+}
+.cate-item__title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 145.455%;
+  color: var(--cate-text-heading-cl);
+}
+.cate-item__desc {
+  margin-top: 6px;
+  font-size: 1.6rem;
+  line-height: 150%;
+  color: var(--cate-text-desc-cl);
+}
+
+.home__container {
+  margin-top: 40px;
+}
+@media (max-width: 767.98px) {
+  .home__container {
+    margin-top: 30px;
+  }
+}
+.home__heading {
+  margin-bottom: 20px;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 141.667%;
+  color: var(--cate-text-heading-cl);
+}
+.home__cate {
+  --grid-gutter-x: 51px;
 }
 
 /*# sourceMappingURL=main.css.map */
