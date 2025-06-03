@@ -2041,6 +2041,12 @@ html.dark {
   background: var(--like-btn-bg-cl);
   box-shadow: 0px 20px 60px var(--like-btn-shadow-cl);
 }
+.like-btn:not(--liked) .product-card__like-btn__icon-heart {
+  display: none;
+}
+.like-btn--liked .product-card__like-btn__icon {
+  display: none;
+}
 
 .product-card {
   padding: 16px;
@@ -2114,6 +2120,7 @@ html.dark {
 @media (max-width: 767.98px) {
   .home__cate {
     --grid-gutter-y: 20px;
+    margin-top: 0;
   }
 }
 .home__row {
