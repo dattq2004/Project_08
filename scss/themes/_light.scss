@@ -45,6 +45,17 @@ html {
     --like-btn-bg-cl: #fff;
     --like-btn-shadow-cl: rgba(124, 124, 124, 0.2);
 
+    // Filter Form
+    --filter-bg-cl: #fff;
+    --filter-text-cl: #1a162e;
+    --filter-shadow-cl: rgba(200, 200, 200, 0.4);
+    --filter-slider-cl: #d2d1d6;
+    --filter-column-boder-right-cl: #eee;
+    --filter-select-bg-cl: #f8f8fb;
+    --filter-input-border-cl: #d2d1d6;
+    --filter-input-bg-cl: #fff;
+    --filter-tag-bg-cl: #f8f8fb;
+
     @include abstracts.breakpoint(lg) {
         --header-bg-cl: #fff;
     }

@@ -38,3 +38,52 @@
         display: none;
     }
 }
+
+// Buttons
+
+.btn {
+    height: 46px;
+    padding: 0 20px;
+    border-radius: 6px;
+    background-color: #f8f8fb;
+
+    user-select: none;
+
+    font-size: 1.8rem;
+    font-weight: 500;
+
+    transition: 0.5s;
+
+    + .btn {
+        margin-left: 20px;
+    }
+
+    &--primary {
+        color: var(--filter-select-bg-cl);
+        background-color: #ffb700;
+    }
+
+    &--text {
+        background-color: transparent;
+        font-weight: 400;
+        color: #9e9da8;
+    }
+
+    &--outline {
+        background-color: #d2d1d6;
+    }
+
+    &--rounded {
+        border-radius: 99px;
+    }
+
+    &--disable,
+    &[disabled] {
+        opacity: 0.4;
+        pointer-events: none;
+    }
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
