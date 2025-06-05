@@ -57,4 +57,15 @@ html.dark {
     --filter-slider-cl: #d2d1d6;
     --filter-select-bg-cl: #171c28;
     --filter-tag-bg-cl: #171c28;
+
+    // Sign Up
+    --sign-up-bg-cl: #292e39;
+    --sign-up-hdg-cl: #b9babe;
+    --sign-up-input-cl: var(--sign-up-hdg-cl);
+    --sign-up-input-outline-cl: var(--sign-up-hdg-cl);
+    --sign-up-input-bg-cl: var(--sign-up-bg-cl);
+    --sign-up-text-cl: var(--sign-up-hdg-cl);
+    --sign-up-label-cl: var(--sign-up-hdg-cl);
+    --intro-bg-cl: #171c28;
+    --intro-dot-cl: #292e39;
 }

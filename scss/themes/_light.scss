@@ -56,6 +56,15 @@ html {
     --filter-input-bg-cl: #fff;
     --filter-tag-bg-cl: #f8f8fb;
 
+    // Sign Up
+    --sign-up-bg-cl: #fff;
+    --sign-up-input-cl: #d2d1d6;
+    --sign-up-input-bg-cl: var(--sign-up-bg-cl);
+    --sign-up-input-outline-cl: var(--sign-up-input-cl);
+    --sign-up-text-cl: #9e9da8;
+    --sign-up-label-cl: var(--sign-up-text-cl);
+    --intro-bg-cl: var(--body-bg-cl);
+    --intro-dot-cl: #ededf6;
     @include abstracts.breakpoint(lg) {
         --header-bg-cl: #fff;
     }

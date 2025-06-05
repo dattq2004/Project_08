@@ -42,6 +42,11 @@
 // Buttons
 
 .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
     height: 46px;
     padding: 0 20px;
     border-radius: 6px;
@@ -54,12 +59,12 @@
 
     transition: 0.5s;
 
-    + .btn {
+    + .btn:not(.btn--no-ml) {
         margin-left: 20px;
     }
 
     &--primary {
-        color: var(--filter-select-bg-cl);
+        color: #1a162e;
         background-color: #ffb700;
     }
 
@@ -70,7 +75,8 @@
     }
 
     &--outline {
-        background-color: #d2d1d6;
+        background-color: transparent;
+        border: 1px solid #d2d1d6;
     }
 
     &--rounded {
