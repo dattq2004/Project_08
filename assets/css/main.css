@@ -2564,6 +2564,7 @@ html.dark {
 .auth {
   display: flex;
   min-height: 100vh;
+  min-height: -webkit-fill-available;
 }
 .auth__intro, .auth__content {
   flex: 1;
