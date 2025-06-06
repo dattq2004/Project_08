@@ -98,8 +98,7 @@
 
         &-input,
         &-tag,
-        &-input-search,
-        &-select {
+        &-input-search {
             font-size: 1.4rem;
             font-weight: 500;
             line-height: 142.857%;
@@ -123,33 +122,6 @@
             border: 1px solid var(--filter-input-border-cl);
             border-radius: 6px;
             background: var(--filter-input-bg-cl);
-        }
-
-        &-select-wrap {
-            display: flex;
-            align-items: center;
-
-            border-radius: 6px;
-            border: 1px solid var(--filter-input-border-cl);
-            height: 45px;
-            // width: 100%;
-        }
-
-        &-select {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 5px 14px;
-            min-width: var(--width, 108px);
-            cursor: pointer;
-
-            @include abstracts.breakpoint(xl) {
-                flex: 1;
-            }
-
-            + .filter__form-select {
-                border-left: 1px solid var(--filter-input-border-cl);
-            }
         }
 
         &-tags {
