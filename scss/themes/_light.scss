@@ -65,6 +65,16 @@ html {
     --sign-up-label-cl: var(--sign-up-text-cl);
     --intro-bg-cl: var(--body-bg-cl);
     --intro-dot-cl: #ededf6;
+
+    // Product-Detail
+    --product-detail-bg-cl: #fff;
+    --breadcums-bg-cl: #f6f6f6;
+    --breadcums-shadow-cl: rgba(237, 237, 246, 0.2);
+    --breadcums-text-at-cl: #1a162e;
+    --product-search-bg-cl: #fff;
+    --prod-info-bg-cl: #f6f6f6;
+    --prod-info-btn-bg-cl: #ededf6;
+
     @include abstracts.breakpoint(lg) {
         --header-bg-cl: #fff;
     }
@@ -72,5 +82,8 @@ html {
     @include abstracts.breakpoint(md) {
         background: #eeeeee;
         --cate-item-bg-cl: #fff;
+        --product-detail-bg-cl: #fafafd;
+        --breadcums-bg-cl: #fff;
+        --prod-info-bg-cl: #fff;
     }
 }
