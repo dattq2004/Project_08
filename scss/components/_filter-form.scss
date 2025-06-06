@@ -97,7 +97,6 @@
         }
 
         &-input,
-        &-tag,
         &-input-search {
             font-size: 1.4rem;
             font-weight: 500;
@@ -122,30 +121,6 @@
             border: 1px solid var(--filter-input-border-cl);
             border-radius: 6px;
             background: var(--filter-input-bg-cl);
-        }
-
-        &-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px 20px;
-        }
-
-        &-tag {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            border-radius: 6px;
-            padding: 6px 12px;
-
-            color: #9e9da8;
-            background: var(--filter-tag-bg-cl);
-
-            transition: 0.5s;
-
-            &:hover {
-                color: var(--filter-text-cl);
-            }
         }
 
         &-text-input {

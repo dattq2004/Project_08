@@ -74,6 +74,7 @@ html {
     --product-search-bg-cl: #fff;
     --prod-info-bg-cl: #f6f6f6;
     --prod-info-btn-bg-cl: #ededf6;
+    --prod-prev-bg-cl: #fff;
 
     @include abstracts.breakpoint(lg) {
         --header-bg-cl: #fff;

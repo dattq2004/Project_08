@@ -14,6 +14,7 @@
 
     @include abstracts.breakpoint(md) {
         column-gap: 16px;
+        border-radius: 20px;
     }
 
     &__link {

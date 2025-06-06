@@ -10,25 +10,9 @@
     }
     &-container {
         margin-top: 30px;
-    }
 
-    &__search {
-        display: flex;
-        align-items: center;
-
-        height: 50px;
-        padding: 15px;
-
-        border-radius: 10px;
-        background-color: var(--product-search-bg-cl);
-
-        &-input {
-            width: 100%;
-            font-size: 1.6rem;
-        }
-
-        &-icon {
-            margin-left: 12px;
+        @include abstracts.breakpoint(md) {
+            margin-top: 20px;
         }
     }
 }
@@ -36,10 +20,25 @@
 .prod-preview {
     background: transparent;
     padding: 0 30px;
+
+    @include abstracts.breakpoint(lg) {
+        display: flex;
+    }
+
+    @include abstracts.breakpoint(md) {
+        padding: 0 16px 16px 16px;
+        border-radius: 20px 20px 0 0;
+        background: var(--prod-prev-bg-cl);
+    }
+
     &__list {
         display: flex;
         align-items: center;
         overflow: hidden;
+
+        @include abstracts.breakpoint(lg) {
+            flex-grow: 1;
+        }
     }
 
     &__item {
@@ -66,6 +65,11 @@
         gap: 20px;
 
         padding: 30px;
+
+        @include abstracts.breakpoint(lg) {
+            flex-direction: column;
+            padding-right: 0px;
+        }
     }
 
     &__thumb {
@@ -95,17 +99,37 @@
     padding: 60px;
     background-color: var(--prod-info-bg-cl);
 
+    @include abstracts.breakpoint(xxl) {
+        padding: 43px;
+    }
+
+    @include abstracts.breakpoint(lg) {
+        margin-top: 30px;
+    }
+
+    @include abstracts.breakpoint(md) {
+        margin-top: 0;
+        padding: 0 16px 16px 16px;
+        border-radius: 0 0 20px 20px;
+    }
+
     &__heading {
         font-size: 2.6rem;
         font-weight: 500;
         line-height: 138.462%;
+
+        @include abstracts.breakpoint(md) {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 144.444%;
+        }
     }
 
     &__label {
         margin-top: 30px;
     }
 
-    &__btn {
+    &__tag {
         background-color: var(--prod-info-btn-bg-cl);
     }
 
@@ -159,6 +183,14 @@
 
 .prod-props {
     padding-left: 30px;
+
+    @include abstracts.breakpoint(xxl) {
+        padding-left: 10px;
+    }
+
+    @include abstracts.breakpoint(lg) {
+        padding-left: 0px;
+    }
 }
 
 .prod-prop {

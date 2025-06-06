@@ -1,0 +1,21 @@
+@use "../abstracts";
+
+.search-bar {
+    display: flex;
+    align-items: center;
+
+    height: 50px;
+    padding: 15px;
+
+    border-radius: 10px;
+    background-color: var(--product-search-bg-cl);
+
+    &-input {
+        width: 100%;
+        font-size: 1.6rem;
+    }
+
+    &-icon {
+        margin-left: 12px;
+    }
+}

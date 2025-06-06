@@ -151,7 +151,8 @@
         line-height: 145.455%;
 
         &--small,
-        .form__select {
+        .form__select,
+        .form__tag {
             font-size: 1.4rem;
             font-weight: 500;
             line-height: 142.857%;
@@ -212,6 +213,30 @@
 
         + .form__select {
             border-left: 1px solid var(--filter-input-border-cl);
+        }
+    }
+
+    &__tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px 20px;
+    }
+
+    &__tag {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border-radius: 6px;
+        padding: 6px 12px;
+
+        color: #9e9da8;
+        background: var(--filter-tag-bg-cl);
+
+        transition: 0.5s;
+
+        &:hover {
+            color: var(--filter-text-cl);
         }
     }
 }
