@@ -81,4 +81,13 @@ html.dark {
 
     // Review-card
     --review-card-bg-cl: #171c28;
+
+    // Act-dropdown-header
+    --hd-act-dropdown-bg-cl: #292e39;
+    --hd-act-dropdown-shadow-cl: rgba(23, 28, 40, 0.4);
+    --hd-act-dropdown-text-cl: #b9babe;
+
+    // Arrow-up
+    --ar-up-filter: brightness(0) saturate(100%) invert(13%) sepia(7%) saturate(2214%) hue-rotate(183deg)
+        brightness(95%) contrast(85%);
 }
