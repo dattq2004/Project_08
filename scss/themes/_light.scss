@@ -76,6 +76,9 @@ html {
     --prod-info-btn-bg-cl: #ededf6;
     --prod-prev-bg-cl: #fff;
 
+    // Review-card
+    --review-card-bg-cl: #fafafd;
+
     @include abstracts.breakpoint(lg) {
         --header-bg-cl: #fff;
     }
