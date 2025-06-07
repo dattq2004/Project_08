@@ -228,14 +228,25 @@
     &__list {
         display: flex;
         align-items: center;
-        column-gap: 60px;
+        margin-left: -30px;
+        flex-wrap: wrap;
+
+        @include abstracts.breakpoint(md) {
+            margin-left: -10px;
+        }
     }
 
     &__item {
+        padding: 10px 30px;
+
         font-size: 2.2rem;
         font-weight: 500;
         line-height: 145.455%;
         color: #9e9da8;
+
+        @include abstracts.breakpoint(md) {
+            padding: 8px 10px;
+        }
 
         &:hover {
             cursor: pointer;
