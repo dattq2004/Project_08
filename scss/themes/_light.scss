@@ -68,9 +68,9 @@ html {
 
     // Product-Detail
     --product-detail-bg-cl: #fff;
-    --breadcums-bg-cl: #f6f6f6;
-    --breadcums-shadow-cl: rgba(237, 237, 246, 0.2);
-    --breadcums-text-at-cl: #1a162e;
+    --breadcrumbs-bg-cl: #f6f6f6;
+    --breadcrumbs-shadow-cl: rgba(237, 237, 246, 0.2);
+    --breadcrumbs-text-at-cl: #1a162e;
     --product-search-bg-cl: #fff;
     --prod-info-bg-cl: #f6f6f6;
     --prod-info-btn-bg-cl: #ededf6;
@@ -87,6 +87,12 @@ html {
     --ar-up-filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7%) hue-rotate(159deg) brightness(103%)
         contrast(100%);
 
+    --arrow-left-filter: brightness(0) saturate(100%) invert(5%) sepia(58%) saturate(1841%) hue-rotate(230deg)
+        brightness(93%) contrast(92%);
+
+    // Checkout
+    --chout-bcrums-bg-cl: #fff;
+
     @include abstracts.breakpoint(lg) {
         --header-bg-cl: #fff;
     }
@@ -95,7 +101,7 @@ html {
         background: #eeeeee;
         --cate-item-bg-cl: #fff;
         --product-detail-bg-cl: #fafafd;
-        --breadcums-bg-cl: #fff;
+        --breadcrumbs-bg-cl: #fff;
         --prod-info-bg-cl: #fff;
         --review-card-bg-cl: #fff;
     }

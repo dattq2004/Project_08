@@ -210,3 +210,28 @@ window.addEventListener("template-loaded", () => {
         });
     });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    // Lấy tất cả các cart-item
+    const cartItems = document.querySelectorAll(".cart-item");
+
+    cartItems.forEach((item) => {
+        const minusBtn = item.querySelector(".minus-btn");
+        const plusBtn = item.querySelector(".plus-btn");
+        const quantitySpan = item.querySelector(".cart-item__quantity");
+
+        minusBtn.addEventListener("click", () => {
+            let currentQuantity = parseInt(quantitySpan.textContent, 10);
+            if (currentQuantity > 1) {
+                currentQuantity -= 1;
+                quantitySpan.textContent = currentQuantity;
+            }
+        });
+
+        plusBtn.addEventListener("click", () => {
+            let currentQuantity = parseInt(quantitySpan.textContent, 10);
+            currentQuantity += 1;
+            quantitySpan.textContent = currentQuantity;
+        });
+    });
+});

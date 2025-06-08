@@ -71,9 +71,9 @@ html.dark {
 
     // Product-Detail
     --product-detail-bg-cl: #292e39;
-    --breadcums-bg-cl: #171c28;
-    --breadcums-shadow-cl: rgba(23, 28, 40, 0.2);
-    --breadcums-text-at-cl: #fff;
+    --breadcrumbs-bg-cl: #171c28;
+    --breadcrumbs-shadow-cl: rgba(23, 28, 40, 0.2);
+    --breadcrumbs-text-at-cl: #fff;
     --product-search-bg-cl: #171c28;
     --prod-info-bg-cl: #171c28;
     --prod-info-btn-bg-cl: #292e39;
@@ -90,4 +90,11 @@ html.dark {
     // Arrow-up
     --ar-up-filter: brightness(0) saturate(100%) invert(13%) sepia(7%) saturate(2214%) hue-rotate(183deg)
         brightness(95%) contrast(85%);
+
+    // Checkout
+    --chout-bcrums-bg-cl: #171c28;
+    --chout-text-cl: #b9babe;
+
+    --checkout-icon-filter: brightness(0) saturate(100%) invert(78%) sepia(0%) saturate(33%) hue-rotate(273deg)
+        brightness(94%) contrast(97%);
 }
