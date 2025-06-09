@@ -93,6 +93,12 @@ html {
     // Checkout
     --chout-bcrums-bg-cl: #fff;
 
+    // Button
+    --btn-text-cl: #1a162e;
+
+    // Modal
+    // --text-hv-cl: #;
+
     @include abstracts.breakpoint(lg) {
         --header-bg-cl: #fff;
     }

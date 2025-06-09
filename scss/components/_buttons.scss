@@ -71,7 +71,7 @@
     &--text {
         background-color: transparent;
         font-weight: 400;
-        color: #9e9da8;
+        color: var(--btn-text-cl);
     }
 
     &--outline {

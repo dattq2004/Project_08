@@ -119,7 +119,7 @@
                                                     <img
                                                         src="./assets/icons/edit.svg"
                                                         alt=""
-                                                        class="address-card__edit-icon"
+                                                        class="address-card__edit-icon icon"
                                                     />
                                                     Edit
                                                 </button>
@@ -168,7 +168,7 @@
                                                     <img
                                                         src="./assets/icons/edit.svg"
                                                         alt=""
-                                                        class="address-card__edit-icon"
+                                                        class="address-card__edit-icon icon"
                                                     />
                                                     Edit
                                                 </button>
@@ -458,11 +458,11 @@
         </script>
 
         <!-- Box Modal Form Address Input -->
-        <div class="modal modal--large hide" id="add-new-address">
+        <div class="modal modal--large show" id="add-new-address">
             <div class="modal__content">
-                <div class="modal__top">Add new address</div>
-                <div class="modal__mid">
-                    <form action="./index-logined.html" class="form">
+                <form action="./index-logined.html" class="form" autocomplete="off">
+                    <div class="modal__top modal__top--no-mt">Add new address</div>
+                    <div class="modal__mid">
                         <div class="form__row">
                             <!-- Country -->
                             <div class="form__group">
@@ -473,10 +473,59 @@
                                         placeholder="Country"
                                         name="country"
                                         id="country"
-                                        class="form__input form__input--small"
+                                        class="form__input form__input--small js-toggle"
+                                        toggle-target="#country-box"
                                         required
                                     />
                                     <img src="./assets/icons/warning.svg" alt="" class="form__warning-icon" />
+                                    <div class="form__search-dialog" id="country-box">
+                                        <button
+                                            class="form__close-dialog d-none d-sm-block js-toggle"
+                                            toggle-target="#country-box"
+                                        >
+                                            &times
+                                        </button>
+                                        <div class="form__search">
+                                            <input type="text" placeholder="Search" class="form__search-input" />
+                                            <img
+                                                src="./assets/icons/search.svg"
+                                                alt=""
+                                                class="form__search-icon icon"
+                                            />
+                                        </div>
+                                        <ul class="form__options-list">
+                                            <li class="form__option">Hà Nội</li>
+                                            <li class="form__option">Hồ Chí Minh</li>
+                                            <li class="form__option form__option--current">Đà Nẵng</li>
+                                            <li class="form__option">Hải Phòng</li>
+                                            <li class="form__option">Cần Thơ</li>
+                                            <li class="form__option">An Giang</li>
+                                            <li class="form__option">Bà Rịa - Vũng Tàu</li>
+                                            <li class="form__option">Bạc Liêu</li>
+                                            <li class="form__option">Bắc Giang</li>
+                                            <li class="form__option">Bắc Kạn</li>
+                                            <li class="form__option">Bắc Ninh</li>
+                                            <li class="form__option">Bến Tre</li>
+                                            <li class="form__option">Bình Định</li>
+                                            <li class="form__option">Bình Dương</li>
+                                            <li class="form__option">Bình Phước</li>
+                                            <li class="form__option">Bình Thuận</li>
+                                            <li class="form__option">Cà Mau</li>
+                                            <li class="form__option">Cao Bằng</li>
+                                            <li class="form__option">Đắk Lắk</li>
+                                            <li class="form__option">Đắk Nông</li>
+                                            <li class="form__option">Điện Biên</li>
+                                            <li class="form__option">Đồng Nai</li>
+                                            <li class="form__option">Đồng Tháp</li>
+                                            <li class="form__option">Gia Lai</li>
+                                            <li class="form__option">Hà Giang</li>
+                                            <li class="form__option">Hà Nam</li>
+                                            <li class="form__option">Hà Tĩnh</li>
+                                            <li class="form__option">Hải Dương</li>
+                                            <li class="form__option">Hậu Giang</li>
+                                            <li class="form__option">Hòa Bình</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                             <!-- City -->
@@ -543,14 +592,19 @@
                                 <span class="form__checkbox-label">Set as default card</span>
                             </label>
                         </div>
-                    </form>
-                </div>
-                <div class="modal__bot">
-                    <button class="modal__btn btn btn--text js-toggle" toggle-target="#add-new-address">Cancel</button>
-                    <button class="modal__btn btn btn--primary btn--no-ml js-toggle" toggle-target="#add-new-address">
-                        Add address
-                    </button>
-                </div>
+                    </div>
+                    <div class="modal__bot">
+                        <button class="modal__btn btn btn--text js-toggle" toggle-target="#add-new-address">
+                            Cancel
+                        </button>
+                        <button
+                            class="modal__btn btn btn--primary btn--no-ml js-toggle"
+                            toggle-target="#add-new-address"
+                        >
+                            Add address
+                        </button>
+                    </div>
+                </form>
             </div>
             <div class="modal__overlay js-toggle" toggle-target="#add-new-address"></div>
         </div>

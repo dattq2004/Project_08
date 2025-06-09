@@ -95,6 +95,12 @@ html.dark {
     --chout-bcrums-bg-cl: #171c28;
     --chout-text-cl: #b9babe;
 
+    // Button
+    --btn-text-cl: #fff;
+
+    // Modal
+    --text-hv-cl: #000;
+
     --checkout-icon-filter: brightness(0) saturate(100%) invert(78%) sepia(0%) saturate(33%) hue-rotate(273deg)
         brightness(94%) contrast(97%);
 }

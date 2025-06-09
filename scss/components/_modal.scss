@@ -13,6 +13,10 @@
     visibility: hidden;
     transition: 0.4s;
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     &.show {
         opacity: 1;
         visibility: visible;
@@ -24,18 +28,14 @@
     }
 
     &__content {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        top: 10%;
         padding: 30px;
         border-radius: 20px;
-        background: #fff;
+        background: var(--body-bg-cl);
         z-index: 1;
 
         width: min(var(--width-content, 500px), 100% - 40px);
 
-        box-shadow: 0px 20px 60px 10px rgba(237, 237, 246, 0.2);
+        box-shadow: 0px 20px 60px 10px var(--header-shadow-cl);
 
         @include abstracts.breakpoint(md) {
             padding: 16px;
@@ -43,7 +43,7 @@
     }
 
     &--small &__content {
-        --width-content: 500px;
+        --width-content: 450px;
     }
 
     &--large &__content {
@@ -61,9 +61,15 @@
     }
 
     &__top {
-        font-size: 2.2rem;
-        font-weight: 700;
+        font-size: 1.8rem;
+        font-weight: 500;
         line-height: 141.667%;
+
+        margin-bottom: 50px;
+
+        &--no-mt {
+            margin-bottom: 0;
+        }
     }
 
     &__mid {
@@ -97,12 +103,15 @@
     }
 
     &__btn {
+        height: 40px;
+
+        &--delete {
+            background-color: #ed4337;
+            color: #fff;
+        }
+
         @include abstracts.breakpoint(md) {
             flex: 1;
         }
-    }
-
-    @include abstracts.breakpoint(md) {
-        padding: 20px;
     }
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="">
+<html lang="en" class="dark">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -344,16 +344,17 @@
         </script>
 
         <!-- Modal Box: Confirm delete product -->
-        <div class="modal hide" id="delete-confirm">
+        <div class="modal--small modal hide" id="delete-confirm">
             <div class="modal__content">
-                <div class="modal__top">Confirm delete</div>
-                <div class="modal__mid">
-                    Are you sure you want to delete Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus,
-                    dolorum.
-                </div>
+                <div class="modal__top">Do you want to remove this item from shopping cart?</div>
                 <div class="modal__bot">
-                    <button class="modal__btn btn btn--text js-toggle" toggle-target="#delete-confirm">Cancel</button>
-                    <button class="modal__btn btn btn--primary btn--no-ml js-toggle" toggle-target="#delete-confirm">
+                    <button class="modal__btn btn btn--text btn--outline js-toggle" toggle-target="#delete-confirm">
+                        Cancel
+                    </button>
+                    <button
+                        class="modal__btn modal__btn--delete btn btn--primary btn--no-ml js-toggle"
+                        toggle-target="#delete-confirm"
+                    >
                         Delete
                     </button>
                 </div>
