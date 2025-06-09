@@ -3389,6 +3389,18 @@ html.dark {
 .cart-info + .cart-info {
   margin-top: 30px;
 }
+.cart-info__heading {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 141.667%;
+}
+@media (max-width: 767.98px) {
+  .cart-info__heading {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 150%;
+  }
+}
 .cart-info__list {
   display: flex;
   flex-direction: column;
@@ -3438,6 +3450,11 @@ html.dark {
   margin: 30px 0;
   height: 1px;
   background-color: #d2d1d6;
+}
+@media (max-width: 767.98px) {
+  .cart-info__seperate {
+    margin: 16px 0;
+  }
 }
 .cart-info__title {
   font-size: 1.6rem;
@@ -3626,6 +3643,130 @@ html.dark {
   margin-top: 10px;
   font-size: 1.4rem;
   line-height: 142.857%;
+}
+
+.user-address__top {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 767.98px) {
+  .user-address__top {
+    flex-direction: column;
+    row-gap: 16px;
+    max-width: 247px;
+  }
+}
+.user-address__title,
+.user-address .address-card__title {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 144.444%;
+}
+@media (max-width: 767.98px) {
+  .user-address__title,
+  .user-address .address-card__title {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 150%;
+  }
+}
+.user-address__sub-heading {
+  margin: 30px 0;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 144.444%;
+}
+@media (max-width: 767.98px) {
+  .user-address__sub-heading {
+    margin-bottom: 16px;
+  }
+}
+.user-address__desc,
+.user-address .address-card__desc {
+  margin-top: 4px;
+  font-size: 1.5rem;
+  line-height: 146.667%;
+}
+@media (max-width: 767.98px) {
+  .user-address__desc,
+  .user-address .address-card__desc {
+    font-size: 1.4rem;
+    line-height: 142.857%;
+  }
+}
+.user-address__info {
+  margin-top: 30px;
+}
+.user-address__list {
+  margin: 30px 0;
+}
+
+.address-card {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 767.98px) {
+  .address-card {
+    flex-direction: column;
+    row-gap: 16px;
+  }
+}
+.address-card + .address-card {
+  margin-top: 30px;
+}
+.address-card__left {
+  display: flex;
+  column-gap: 16px;
+}
+.address-card__checked-icon, .address-card__unchecked-icon {
+  margin-top: 4px;
+}
+.address-card__choose:has(.address-card__checkbox:not(:checked)) .address-card__checkbox ~ .address-card__checked-icon {
+  display: none;
+}
+.address-card__choose:has(.address-card__checkbox:not(:checked)) .address-card__checkbox ~ .address-card__unchecked-icon {
+  display: block;
+}
+.address-card__choose:has(.address-card__checkbox:checked) .address-card__checkbox ~ .address-card__checked-icon {
+  display: block;
+}
+.address-card__choose:has(.address-card__checkbox:checked) .address-card__checkbox ~ .address-card__unchecked-icon {
+  display: none;
+}
+.address-card__desc {
+  width: min(570px, 80%);
+}
+.address-card__list {
+  margin-top: 20px;
+  margin-left: 10px;
+  list-style: disc inside;
+  display: flex;
+  column-gap: 30px;
+}
+@media (max-width: 575.98px) {
+  .address-card__list {
+    flex-direction: column;
+    row-gap: 10px;
+  }
+}
+.address-card__item {
+  font-size: 1.4rem;
+  line-height: 142.857%;
+}
+.address-card__right {
+  align-self: flex-end;
+}
+@media (max-width: 767.98px) {
+  .address-card__right {
+    align-self: flex-start;
+  }
+}
+.address-card__edit {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  font-size: 1.8rem;
+  line-height: 144.444%;
 }
 
 /*# sourceMappingURL=main.css.map */

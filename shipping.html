@@ -43,14 +43,132 @@
                             </a>
                         </li>
                         <li class="breadcrumbs__item">
-                            <a href="#!" class="breadcrumbs__link breadcrumbs__link--active">Checkout </a>
+                            <a href="#!" class="breadcrumbs__link"
+                                >Checkout
+                                <img src="./assets/icons/arrow-right.svg" alt="" class="breadcrumbs__icon" />
+                            </a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a href="#!" class="breadcrumbs__link breadcrumbs__link--active">Shipping </a>
                         </li>
                     </ul>
                 </div>
+
+                <!-- Shipping Content + Cart List -->
                 <div class="checkout-container">
                     <div class="row gy-xl-3">
                         <div class="col-8 col-xl-12">
                             <div class="cart-info">
+                                <h1 class="cart-info__heading">1. Shipping, arrives between Mon, May 16—Tue, May 24</h1>
+                                <div class="cart-info__seperate"></div>
+                                <div class="user-address">
+                                    <div class="user-address__top">
+                                        <div>
+                                            <h2 class="user-address__title">Shipping address</h2>
+                                            <p class="user-address__desc">Where should we deliver your order?</p>
+                                        </div>
+                                        <button class="btn btn--primary btn--rounded">
+                                            <img src="./assets/icons/plus.svg" alt="" />
+                                            Add a new address
+                                        </button>
+                                    </div>
+                                    <div class="user-address__list">
+                                        <div class="address-card">
+                                            <div class="address-card__left">
+                                                <!-- checkbox -->
+                                                <div class="address-card__choose">
+                                                    <label class="address-card__label">
+                                                        <input
+                                                            hidden
+                                                            name="address"
+                                                            type="radio"
+                                                            id=""
+                                                            class="address-card__checkbox"
+                                                        />
+                                                        <img
+                                                            src="./assets/icons/checked.svg"
+                                                            alt=""
+                                                            class="address-card__checked-icon"
+                                                        />
+                                                        <img
+                                                            src="./assets/icons/unchecked.svg"
+                                                            alt=""
+                                                            class="address-card__unchecked-icon"
+                                                        />
+                                                    </label>
+                                                </div>
+                                                <div class="address-card__info">
+                                                    <h3 class="address-card__title">Tran Quoc Dat</h3>
+                                                    <p class="address-card__desc">
+                                                        141 Truong Chinh, An Khe, Thanh Khe District, Da Nang City
+                                                    </p>
+                                                    <ul class="address-card__list">
+                                                        <li class="address-card__item">Shipping</li>
+                                                        <li class="address-card__item">Delivery from store</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="address-card__right">
+                                                <button class="address-card__edit">
+                                                    <img
+                                                        src="./assets/icons/edit.svg"
+                                                        alt=""
+                                                        class="address-card__edit-icon"
+                                                    />
+                                                    Edit
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="address-card">
+                                            <div class="address-card__left">
+                                                <!-- checkbox -->
+                                                <div class="address-card__choose">
+                                                    <label class="address-card__label">
+                                                        <input
+                                                            hidden
+                                                            name="address"
+                                                            type="radio"
+                                                            id=""
+                                                            class="address-card__checkbox"
+                                                        />
+                                                        <img
+                                                            src="./assets/icons/checked.svg"
+                                                            alt=""
+                                                            class="address-card__checked-icon"
+                                                        />
+                                                        <img
+                                                            src="./assets/icons/unchecked.svg"
+                                                            alt=""
+                                                            class="address-card__unchecked-icon"
+                                                        />
+                                                    </label>
+                                                </div>
+                                                <div class="address-card__info">
+                                                    <h3 class="address-card__title">Tran Quoc Dat</h3>
+                                                    <p class="address-card__desc">
+                                                        141 Truong Chinh, An Khe, Thanh Khe District, Da Nang City
+                                                    </p>
+                                                    <ul class="address-card__list">
+                                                        <li class="address-card__item">Shipping</li>
+                                                        <li class="address-card__item">Delivery from store</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="address-card__right">
+                                                <button class="address-card__edit">
+                                                    <img
+                                                        src="./assets/icons/edit.svg"
+                                                        alt=""
+                                                        class="address-card__edit-icon"
+                                                    />
+                                                    Edit
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cart-info__seperate"></div>
+                                <h3 class="user-address__sub-heading">Items details</h3>
                                 <div class="cart-info__list">
                                     <!-- Cart Item 1 -->
                                     <article class="cart-item">
@@ -299,12 +417,9 @@
                                     <span class="cart-info__value">$201.65</span>
                                 </div>
                                 <div class="cart-info__checkout">
-                                    <a
-                                        href="./shipping.html"
-                                        class="cart-info__checkout-btn btn btn--primary btn--rounded"
-                                    >
+                                    <button class="cart-info__checkout-btn btn btn--primary btn--rounded">
                                         Continue to checkout
-                                    </a>
+                                    </button>
                                 </div>
                             </div>
                             <div class="cart-info">
