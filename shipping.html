@@ -67,7 +67,10 @@
                                             <h2 class="user-address__title">Shipping address</h2>
                                             <p class="user-address__desc">Where should we deliver your order?</p>
                                         </div>
-                                        <button class="btn btn--primary btn--rounded">
+                                        <button
+                                            class="btn btn--primary btn--rounded js-toggle"
+                                            toggle-target="#add-new-address"
+                                        >
                                             <img src="./assets/icons/plus.svg" alt="" />
                                             Add a new address
                                         </button>
@@ -455,8 +458,8 @@
         </script>
 
         <!-- Box Modal Form Address Input -->
-        <div class="modal show" id="add-new-address">
-            <div class="modal__content" style="--width-content: 800px">
+        <div class="modal modal--large hide" id="add-new-address">
+            <div class="modal__content">
                 <div class="modal__top">Add new address</div>
                 <div class="modal__mid">
                     <form action="./index-logined.html" class="form">
@@ -494,7 +497,7 @@
                         <!-- Phone -->
                         <div class="form__group">
                             <label class="form__label--small" for="phone">Phone</label>
-                            <div class="form__text-input form__text-input--small">
+                            <div class="form__text-input form__text-input--small" style="max-width: 300px">
                                 <input
                                     type="text"
                                     placeholder="Phone number"
@@ -510,7 +513,7 @@
                         <!-- Name  -->
                         <div class="form__group">
                             <label class="form__label--small" for="name">Name Receiver</label>
-                            <div class="form__text-input form__text-input--small">
+                            <div class="form__text-input form__text-input--small" style="max-width: 600px">
                                 <input
                                     type="text"
                                     placeholder="Name receiver"

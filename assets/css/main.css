@@ -2981,6 +2981,21 @@ html.dark {
     padding: 16px;
   }
 }
+.modal--small .modal__content {
+  --width-content: 500px;
+}
+.modal--large .modal__content {
+  --width-content: 800px;
+}
+.modal--fill .modal__content {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  transform: translateX(0%);
+  border-radius: 0;
+}
 .modal__top {
   font-size: 2.2rem;
   font-weight: 700;
@@ -2993,6 +3008,8 @@ html.dark {
   border-bottom: 1px solid #ebebeb;
   font-size: 1.6rem;
   line-height: 146.667%;
+  max-height: calc(100vh - 222px);
+  overflow-y: auto;
 }
 @media (max-width: 767.98px) {
   .modal__mid {
