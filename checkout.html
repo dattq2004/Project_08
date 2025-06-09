@@ -110,7 +110,7 @@
                                                     </button>
                                                     <button
                                                         class="cart-item__controls-btn js-toggle"
-                                                        toggle-target="#modal-box"
+                                                        toggle-target="#delete-confirm"
                                                     >
                                                         <img src="./assets/icons/trash.svg" alt="" />
                                                         Delete
@@ -175,7 +175,7 @@
                                                     </button>
                                                     <button
                                                         class="cart-item__controls-btn js-toggle"
-                                                        toggle-target="#modal-box"
+                                                        toggle-target="#delete-confirm"
                                                     >
                                                         <img src="./assets/icons/trash.svg" alt="" />
                                                         Delete
@@ -240,7 +240,7 @@
                                                     </button>
                                                     <button
                                                         class="cart-item__controls-btn js-toggle"
-                                                        toggle-target="#modal-box"
+                                                        toggle-target="#delete-confirm"
                                                     >
                                                         <img src="./assets/icons/trash.svg" alt="" />
                                                         Delete
@@ -344,7 +344,7 @@
         </script>
 
         <!-- Modal Box: Confirm delete product -->
-        <div class="modal" id="modal-box">
+        <div class="modal hide" id="delete-confirm">
             <div class="modal__content">
                 <div class="modal__top">Confirm delete</div>
                 <div class="modal__mid">
@@ -352,13 +352,13 @@
                     dolorum.
                 </div>
                 <div class="modal__bot">
-                    <button class="modal__btn btn btn--text js-toggle" toggle-target="#modal-box">Cancel</button>
-                    <button class="modal__btn btn btn--primary btn--no-ml js-toggle" toggle-target="#modal-box">
+                    <button class="modal__btn btn btn--text js-toggle" toggle-target="#delete-confirm">Cancel</button>
+                    <button class="modal__btn btn btn--primary btn--no-ml js-toggle" toggle-target="#delete-confirm">
                         Delete
                     </button>
                 </div>
             </div>
-            <div class="modal__overlay js-toggle" toggle-target="#modal-box"></div>
+            <div class="modal__overlay js-toggle" toggle-target="#delete-confirm"></div>
         </div>
     </body>
 </html>

@@ -109,7 +109,10 @@
                                                 </div>
                                             </div>
                                             <div class="address-card__right">
-                                                <button class="address-card__edit">
+                                                <button
+                                                    class="address-card__edit js-toggle"
+                                                    toggle-target="#add-new-address"
+                                                >
                                                     <img
                                                         src="./assets/icons/edit.svg"
                                                         alt=""
@@ -155,7 +158,10 @@
                                                 </div>
                                             </div>
                                             <div class="address-card__right">
-                                                <button class="address-card__edit">
+                                                <button
+                                                    class="address-card__edit js-toggle"
+                                                    toggle-target="#add-new-address"
+                                                >
                                                     <img
                                                         src="./assets/icons/edit.svg"
                                                         alt=""
@@ -447,5 +453,103 @@
         <script>
             load("#footer", "./templates/footer.html");
         </script>
+
+        <!-- Box Modal Form Address Input -->
+        <div class="modal show" id="add-new-address">
+            <div class="modal__content" style="--width-content: 800px">
+                <div class="modal__top">Add new address</div>
+                <div class="modal__mid">
+                    <form action="./index-logined.html" class="form">
+                        <div class="form__row">
+                            <!-- Country -->
+                            <div class="form__group">
+                                <label class="form__label--small" for="country">Country</label>
+                                <div class="form__text-input form__text-input--small">
+                                    <input
+                                        type="text"
+                                        placeholder="Country"
+                                        name="country"
+                                        id="country"
+                                        class="form__input form__input--small"
+                                        required
+                                    />
+                                    <img src="./assets/icons/warning.svg" alt="" class="form__warning-icon" />
+                                </div>
+                            </div>
+                            <!-- City -->
+                            <div class="form__group form__group--no-mt">
+                                <label class="form__label--small" for="city">City</label>
+                                <div class="form__text-input form__text-input--small">
+                                    <input
+                                        type="text"
+                                        placeholder="City"
+                                        name="city"
+                                        class="form__input form__input--small"
+                                        required
+                                    />
+                                    <img src="./assets/icons/warning.svg" alt="" class="form__warning-icon" />
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Phone -->
+                        <div class="form__group">
+                            <label class="form__label--small" for="phone">Phone</label>
+                            <div class="form__text-input form__text-input--small">
+                                <input
+                                    type="text"
+                                    placeholder="Phone number"
+                                    class="form__input form__input--small"
+                                    id="phone"
+                                    required
+                                    minlength="10"
+                                />
+                                <img src="./assets/icons/warning.svg" alt="" class="form__warning-icon" />
+                            </div>
+                            <p class="form__warning-text">Password must be at least 10 characters</p>
+                        </div>
+                        <!-- Name  -->
+                        <div class="form__group">
+                            <label class="form__label--small" for="name">Name Receiver</label>
+                            <div class="form__text-input form__text-input--small">
+                                <input
+                                    type="text"
+                                    placeholder="Name receiver"
+                                    id="name"
+                                    class="form__input form__input--small"
+                                    required
+                                />
+                                <img src="./assets/icons/warning.svg" alt="" class="form__warning-icon" />
+                            </div>
+                        </div>
+                        <!-- Text Area -->
+                        <div class="form__group">
+                            <label class="form__label--small" for="address">Address Details</label>
+                            <div class="form__text-area">
+                                <textarea
+                                    name="address"
+                                    id="address"
+                                    placeholder="Address Details"
+                                    class="form__text-area-input"
+                                    required
+                                ></textarea>
+                            </div>
+                        </div>
+                        <div class="form__group form__group--inline">
+                            <label class="form__checkbox">
+                                <input type="checkbox" class="form__checkbox-input" hidden />
+                                <span class="form__checkbox-label">Set as default card</span>
+                            </label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal__bot">
+                    <button class="modal__btn btn btn--text js-toggle" toggle-target="#add-new-address">Cancel</button>
+                    <button class="modal__btn btn btn--primary btn--no-ml js-toggle" toggle-target="#add-new-address">
+                        Add address
+                    </button>
+                </div>
+            </div>
+            <div class="modal__overlay js-toggle" toggle-target="#add-new-address"></div>
+        </div>
     </body>
 </html>
