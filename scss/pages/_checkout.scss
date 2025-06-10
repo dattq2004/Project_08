@@ -214,6 +214,7 @@
     }
 
     &__thumb {
+        margin: 0 30px 0 20px;
         width: 175px;
         height: 172px;
         object-fit: contain;
@@ -281,7 +282,16 @@
     &__controls-wrap {
         display: flex;
         align-items: center;
-        column-gap: 30px;
+        gap: 30px;
+
+        @include abstracts.breakpoint(lg) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        @include abstracts.breakpoint(lg) {
+            gap: 16px;
+        }
     }
 
     &__controls {
@@ -365,6 +375,12 @@
         font-weight: 500;
         line-height: 150%;
         color: #9e9da8;
+    }
+
+    &__checkout-btn {
+        @include abstracts.breakpoint(md) {
+            max-width: 170px;
+        }
     }
 }
 
