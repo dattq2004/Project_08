@@ -3847,6 +3847,7 @@ html.dark {
 }
 .cart-item__content {
   flex: 1;
+  height: 100%;
   display: flex;
   justify-content: space-between;
 }
@@ -3859,7 +3860,6 @@ html.dark {
 .cart-item__content-left {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 .cart-item__title {
   max-width: 374px;
