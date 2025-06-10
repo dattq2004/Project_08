@@ -36,10 +36,12 @@
 
         &::before {
             content: url(../icons/unchecked.svg);
+            filter: var(--navbar-icon-lg-cl);
         }
 
         &:checked::before {
             content: url(../icons/checked.svg);
+            filter: var(--navbar-icon-lg-cl);
         }
     }
 
@@ -277,6 +279,12 @@
 
     &__status {
         color: #67b044;
+    }
+
+    &__quantity {
+        display: inline-block; /* hoặc block */
+        width: 10px; /* đủ chứa số lớn nhất */
+        text-align: center;
     }
 
     &__controls-wrap {

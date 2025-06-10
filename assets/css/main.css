@@ -3677,9 +3677,11 @@ html.dark {
 }
 .cart-info__checkbox-input::before {
   content: url(../icons/unchecked.svg);
+  filter: var(--navbar-icon-lg-cl);
 }
 .cart-info__checkbox-input:checked::before {
   content: url(../icons/checked.svg);
+  filter: var(--navbar-icon-lg-cl);
 }
 .cart-info__heading {
   font-size: 2.4rem;
@@ -3843,7 +3845,7 @@ html.dark {
   .cart-item__thumb {
     width: 60px;
     height: 60px;
-    margin-left: 3px;
+    margin: 0 14px;
   }
 }
 .cart-item__content {
@@ -3884,6 +3886,11 @@ html.dark {
 }
 .cart-item__status {
   color: #67b044;
+}
+.cart-item__quantity {
+  display: inline-block; /* hoặc block */
+  width: 10px; /* đủ chứa số lớn nhất */
+  text-align: center;
 }
 .cart-item__controls-wrap {
   display: flex;
