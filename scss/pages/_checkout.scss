@@ -134,6 +134,14 @@
                 line-height: 145.455%;
             }
         }
+
+        &--block {
+            @include abstracts.breakpoint(md) {
+                flex-direction: column;
+                gap: 30px;
+                align-items: flex-start;
+            }
+        }
     }
 
     &__seperate {
@@ -174,6 +182,10 @@
 
             &--check-all {
                 width: initial;
+
+                @include abstracts.breakpoint(md) {
+                    width: 100%;
+                }
             }
         }
     }

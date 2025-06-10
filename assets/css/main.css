@@ -3759,6 +3759,13 @@ html.dark {
   font-weight: 700;
   line-height: 145.455%;
 }
+@media (max-width: 767.98px) {
+  .cart-info__row--block {
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-start;
+  }
+}
 .cart-info__seperate {
   margin: 30px 0;
   height: 1px;
@@ -3793,6 +3800,11 @@ html.dark {
 }
 .cart-info__checkout-btn--check-all {
   width: initial;
+}
+@media (max-width: 767.98px) {
+  .cart-info__checkout-btn--check-all {
+    width: 100%;
+  }
 }
 .cart-info__top {
   display: flex;
