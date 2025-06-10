@@ -3668,6 +3668,9 @@ html.dark {
 .cart-info + .cart-info {
   margin-top: 30px;
 }
+.cart-info__check-all {
+  margin: 30px 0;
+}
 .cart-info__checkbox-input {
   appearance: none;
   cursor: pointer;
@@ -3780,11 +3783,14 @@ html.dark {
   margin-top: 30px;
 }
 .cart-info__checkout-btn {
-  height: 68px;
+  height: 54px;
   width: 100%;
   font-size: 2.2rem;
   font-weight: 500;
   line-height: 145.455%;
+}
+.cart-info__checkout-btn--check-all {
+  width: initial;
 }
 .cart-info__top {
   display: flex;
@@ -3878,10 +3884,15 @@ html.dark {
 .cart-item__status {
   color: #67b044;
 }
+.cart-item__controls-wrap {
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+}
 .cart-item__controls {
   display: flex;
   align-items: center;
-  column-gap: 20px;
+  column-gap: 30px;
 }
 @media (max-width: 767.98px) {
   .cart-item__controls--md-cl {

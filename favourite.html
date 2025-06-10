@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <!-- Script -->
+        <script src="./assets/js/scripts.js"></script>
+        <!-- Style -->
+        <link rel="stylesheet" href="./assets/css/main.css" />
+        <!-- Fonts -->
+        <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="./assets/favicon" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="./assets/favicon/favicon.svg" />
+        <link rel="shortcut icon" href="./assets/favicon/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png" />
+        <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+    </head>
+    <body>
+        <!-- Header -->
+        <header id="header" class="header"></header>
+        <script>
+            load("#header", "./templates/header-logined.html");
+        </script>
+
+        <main class="checkout-page">
+            <div class="container">
+                <!-- Search Bar -->
+                <div class="checkout-container">
+                    <div class="search-bar d-none d-md-flex">
+                        <input placeholder="Search for item" type="text" class="search-bar-input" />
+                        <img src="./assets/icons/search.svg" alt="" class="search-bar-icon icon" />
+                    </div>
+                </div>
+                <!-- breadcrumbs -->
+                <div class="checkout-container">
+                    <ul class="breadcrumbs checkout-breadcrumbs">
+                        <li class="breadcrumbs__item">
+                            <a href="./index-logined.html" class="breadcrumbs__link"
+                                >Home
+                                <img src="./assets/icons/arrow-right.svg" alt="" class="breadcrumbs__icon" />
+                            </a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a href="#!" class="breadcrumbs__link breadcrumbs__link--active">Favourite </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Shipping Content + Cart List -->
+                <div class="checkout-container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="cart-info">
+                                <h1 class="cart-info__heading">Favourite List</h1>
+                                <p class="cart-info__desc">3 items</p>
+                                <div class="cart-info__check-all">
+                                    <label class="cart-info__checkbox">
+                                        <input name="" type="checkbox" id="" class="cart-info__checkbox-input" />
+                                    </label>
+                                </div>
+                                <div class="cart-info__list">
+                                    <!-- Cart Item 1 -->
+                                    <article class="cart-item">
+                                        <label class="cart-info__checkbox">
+                                            <input
+                                                name="address"
+                                                type="checkbox"
+                                                id=""
+                                                class="cart-info__checkbox-input"
+                                            />
+                                        </label>
+                                        <a href="./product-detail.html">
+                                            <img
+                                                src="./assets/img/product-card/item-1.png"
+                                                alt=""
+                                                class="cart-item__thumb"
+                                            />
+                                        </a>
+                                        <div class="cart-item__content">
+                                            <div class="cart-item__content-left">
+                                                <h3 class="cart-item__title">
+                                                    <a href="./product-detail.html"
+                                                        >Coffee Beans - Espresso Arabica and Robusta Beans Lorem ipsum
+                                                        dolor sit amet. Lorem ipsum dolor sit amet consectetur.
+                                                    </a>
+                                                </h3>
+                                                <p class="cart-item__price-wrap">
+                                                    $47.00 | <span class="cart-item__status">In Stock</span>
+                                                </p>
+
+                                                <div class="cart-item__controls-wrap">
+                                                    <div class="cart-item__controls cart-item__controls--md-cl">
+                                                        <div class="cart-item__input">
+                                                            LavAzza
+                                                            <img
+                                                                src="./assets/icons/arrow-down-large.svg"
+                                                                alt=""
+                                                                class="cart-item__arrow-down"
+                                                            />
+                                                        </div>
+                                                        <div class="cart-item__input">
+                                                            <button class="cart-item__input-btn minus-btn">
+                                                                <img
+                                                                    src="./assets/icons/minus.svg"
+                                                                    alt=""
+                                                                    class="cart-item__btn"
+                                                                />
+                                                            </button>
+                                                            <span class="cart-item__quantity">1</span>
+                                                            <button class="cart-item__input-btn plus-btn">
+                                                                <img
+                                                                    src="./assets/icons/plus.svg"
+                                                                    alt=""
+                                                                    class="cart-item__btn"
+                                                                />
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="cart-item__controls">
+                                                        <button class="cart-item__controls-btn">
+                                                            <img src="./assets/icons/heart-2.svg" alt="" />
+                                                            Save
+                                                        </button>
+                                                        <button
+                                                            class="cart-item__controls-btn js-toggle"
+                                                            toggle-target="#delete-confirm"
+                                                        >
+                                                            <img src="./assets/icons/trash.svg" alt="" />
+                                                            Delete
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="cart-item__content-right">
+                                                <h3 class="cart-item__total-price">$47.00</h3>
+                                                <button class="cart-item__checkout-btn btn btn--primary btn--rounded">
+                                                    Checkout
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </article>
+                                    <!-- Cart Item 2 -->
+                                    <article class="cart-item">
+                                        <label class="cart-info__checkbox">
+                                            <input
+                                                name="address"
+                                                type="checkbox"
+                                                id=""
+                                                class="cart-info__checkbox-input"
+                                            />
+                                        </label>
+                                        <a href="./product-detail.html">
+                                            <img
+                                                src="./assets/img/product-card/item-2.png"
+                                                alt=""
+                                                class="cart-item__thumb"
+                                            />
+                                        </a>
+                                        <div class="cart-item__content">
+                                            <div class="cart-item__content-left">
+                                                <h3 class="cart-item__title">
+                                                    <a href="./product-detail.html"
+                                                        >Lavazza Coffee Blends - Try the Italian Espresso</a
+                                                    >
+                                                </h3>
+                                                <p class="cart-item__price-wrap">
+                                                    $53 | <span class="cart-item__status">In Stock</span>
+                                                </p>
+                                                <div class="cart-item__controls-wrap">
+                                                    <div class="cart-item__controls cart-item__controls--md-cl">
+                                                        <div class="cart-item__input">
+                                                            LavAzza
+                                                            <img
+                                                                src="./assets/icons/arrow-down-large.svg"
+                                                                alt=""
+                                                                class="cart-item__arrow-down"
+                                                            />
+                                                        </div>
+                                                        <div class="cart-item__input">
+                                                            <button class="cart-item__input-btn minus-btn">
+                                                                <img
+                                                                    src="./assets/icons/minus.svg"
+                                                                    alt=""
+                                                                    class="cart-item__btn"
+                                                                />
+                                                            </button>
+                                                            <span class="cart-item__quantity">1</span>
+                                                            <button class="cart-item__input-btn plus-btn">
+                                                                <img
+                                                                    src="./assets/icons/plus.svg"
+                                                                    alt=""
+                                                                    class="cart-item__btn"
+                                                                />
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="cart-item__controls">
+                                                        <button class="cart-item__controls-btn">
+                                                            <img src="./assets/icons/heart-2.svg" alt="" />
+                                                            Save
+                                                        </button>
+                                                        <button
+                                                            class="cart-item__controls-btn js-toggle"
+                                                            toggle-target="#delete-confirm"
+                                                        >
+                                                            <img src="./assets/icons/trash.svg" alt="" />
+                                                            Delete
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="cart-item__content-right">
+                                                <h3 class="cart-item__total-price">$106.00</h3>
+                                                <button class="cart-item__checkout-btn btn btn--primary btn--rounded">
+                                                    Checkout
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </article>
+                                    <!-- Cart Item 3 -->
+                                    <article class="cart-item">
+                                        <label class="cart-info__checkbox">
+                                            <input
+                                                name="address"
+                                                type="checkbox"
+                                                id=""
+                                                class="cart-info__checkbox-input"
+                                            />
+                                        </label>
+                                        <a href="./product-detail.html">
+                                            <img
+                                                src="./assets/img/product-card/item-3.png"
+                                                alt=""
+                                                class="cart-item__thumb"
+                                            />
+                                        </a>
+                                        <div class="cart-item__content">
+                                            <div class="cart-item__content-left">
+                                                <h3 class="cart-item__title">
+                                                    <a href="./product-detail.html"
+                                                        >Qualità Oro Mountain Grown - Espresso Coffee Beans</a
+                                                    >
+                                                </h3>
+                                                <p class="cart-item__price-wrap">
+                                                    $38.65 | <span class="cart-item__status">In Stock</span>
+                                                </p>
+                                                <div class="cart-item__controls-wrap">
+                                                    <div class="cart-item__controls cart-item__controls--md-cl">
+                                                        <div class="cart-item__input">
+                                                            LavAzza
+                                                            <img
+                                                                src="./assets/icons/arrow-down-large.svg"
+                                                                alt=""
+                                                                class="cart-item__arrow-down"
+                                                            />
+                                                        </div>
+                                                        <div class="cart-item__input">
+                                                            <button class="cart-item__input-btn minus-btn">
+                                                                <img
+                                                                    src="./assets/icons/minus.svg"
+                                                                    alt=""
+                                                                    class="cart-item__btn"
+                                                                />
+                                                            </button>
+                                                            <span class="cart-item__quantity">1</span>
+                                                            <button class="cart-item__input-btn plus-btn">
+                                                                <img
+                                                                    src="./assets/icons/plus.svg"
+                                                                    alt=""
+                                                                    class="cart-item__btn"
+                                                                />
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="cart-item__controls">
+                                                        <button class="cart-item__controls-btn">
+                                                            <img src="./assets/icons/heart-2.svg" alt="" />
+                                                            Save
+                                                        </button>
+                                                        <button
+                                                            class="cart-item__controls-btn js-toggle"
+                                                            toggle-target="#delete-confirm"
+                                                        >
+                                                            <img src="./assets/icons/trash.svg" alt="" />
+                                                            Delete
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="cart-item__content-right">
+                                                <h3 class="cart-item__total-price">$38.65</h3>
+                                                <button class="cart-item__checkout-btn btn btn--primary btn--rounded">
+                                                    Checkout
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="cart-info__bottom d-md-none">
+                                    <div class="cart-info__row">
+                                        <div class="cart-info__ctn-shopping">
+                                            <a href="#!" class="cart-info__ctn-shopping-link">
+                                                <img
+                                                    src="./assets/icons/arrow-right.svg"
+                                                    alt=""
+                                                    class="cart-info__arrow-right"
+                                                />
+                                                Continue Shopping
+                                            </a>
+                                        </div>
+                                        <button
+                                            class="cart-info__checkout-btn cart-info__checkout-btn--check-all btn btn--primary btn--rounded"
+                                        >
+                                            All Check Out
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- Footer -->
+        <footer id="footer"></footer>
+        <script>
+            load("#footer", "./templates/footer.html");
+        </script>
+
+        <!-- Box Modal Form Address Input -->
+        <div class="modal modal--large hide" id="add-new-address">
+            <div class="modal__content">
+                <form action="./index-logined.html" class="form" autocomplete="off">
+                    <div class="modal__top modal__top--no-mt">Add new address</div>
+                    <div class="modal__mid">
+                        <div class="form__row">
+                            <!-- Country -->
+                            <div class="form__group">
+                                <label class="form__label--small" for="country">Country</label>
+                                <div class="form__text-input form__text-input--small">
+                                    <input
+                                        type="text"
+                                        placeholder="Country"
+                                        name="country"
+                                        id="country"
+                                        class="form__input form__input--small js-toggle"
+                                        toggle-target="#country-box"
+                                        readonly
+                                    />
+                                    <img src="./assets/icons/warning.svg" alt="" class="form__warning-icon" />
+                                    <div class="form__search-dialog hide" id="country-box">
+                                        <button
+                                            class="form__close-dialog d-none d-sm-block js-toggle"
+                                            toggle-target="#country-box"
+                                        >
+                                            &times
+                                        </button>
+                                        <div class="form__search">
+                                            <input
+                                                type="text"
+                                                placeholder="Search country"
+                                                class="form__search-input"
+                                            />
+                                            <img
+                                                src="./assets/icons/search.svg"
+                                                alt=""
+                                                class="form__search-icon icon"
+                                            />
+                                        </div>
+                                        <ul class="form__options-list">
+                                            <li class="form__option form__option--current">Việt Nam</li>
+                                            <li class="form__option">Hoa Kỳ</li>
+                                            <li class="form__option">Nhật Bản</li>
+                                            <li class="form__option">Hàn Quốc</li>
+                                            <li class="form__option">Trung Quốc</li>
+                                            <li class="form__option">Pháp</li>
+                                            <li class="form__option">Đức</li>
+                                            <li class="form__option">Canada</li>
+                                            <li class="form__option">Ý</li>
+                                            <li class="form__option">Úc</li>
+                                            <li class="form__option">Ấn Độ</li>
+                                            <li class="form__option">Thái Lan</li>
+                                            <li class="form__option">Indonesia</li>
+                                            <li class="form__option">Singapore</li>
+                                            <li class="form__option">Malaysia</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- City -->
+                            <div class="form__group form__group--no-mt">
+                                <label class="form__label--small" for="city">City</label>
+                                <div class="form__text-input form__text-input--small">
+                                    <input
+                                        type="text"
+                                        placeholder="City"
+                                        name="city"
+                                        class="form__input form__input--small"
+                                        required
+                                    />
+                                    <img src="./assets/icons/warning.svg" alt="" class="form__warning-icon" />
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Phone -->
+                        <div class="form__group">
+                            <label class="form__label--small" for="phone">Phone</label>
+                            <div class="form__text-input form__text-input--small" style="max-width: 300px">
+                                <input
+                                    type="text"
+                                    placeholder="Phone number"
+                                    class="form__input form__input--small"
+                                    id="phone"
+                                    required
+                                    minlength="10"
+                                />
+                                <img src="./assets/icons/warning.svg" alt="" class="form__warning-icon" />
+                            </div>
+                            <p class="form__warning-text">Password must be at least 10 characters</p>
+                        </div>
+                        <!-- Name  -->
+                        <div class="form__group">
+                            <label class="form__label--small" for="name">Name Receiver</label>
+                            <div class="form__text-input form__text-input--small" style="max-width: 600px">
+                                <input
+                                    type="text"
+                                    placeholder="Name receiver"
+                                    id="name"
+                                    class="form__input form__input--small"
+                                    required
+                                />
+                                <img src="./assets/icons/warning.svg" alt="" class="form__warning-icon" />
+                            </div>
+                        </div>
+                        <!-- Text Area -->
+                        <div class="form__group">
+                            <label class="form__label--small" for="address">Address Details</label>
+                            <div class="form__text-area">
+                                <textarea
+                                    name="address"
+                                    id="address"
+                                    placeholder="Address Details"
+                                    class="form__text-area-input"
+                                    required
+                                ></textarea>
+                            </div>
+                        </div>
+                        <div class="form__group form__group--inline">
+                            <label class="form__checkbox">
+                                <input type="checkbox" class="form__checkbox-input" hidden />
+                                <span class="form__checkbox-label">Set as default card</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="modal__bot">
+                        <button class="modal__btn btn btn--text js-toggle" toggle-target="#add-new-address">
+                            Cancel
+                        </button>
+                        <button
+                            class="modal__btn btn btn--primary btn--no-ml js-toggle form__submit-btn"
+                            toggle-target="#add-new-address"
+                        >
+                            Add address
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <div class="modal__overlay js-toggle" toggle-target="#add-new-address"></div>
+        </div>
+        <!-- Modal Box: Confirm delete product -->
+        <div class="modal--small modal hide" id="delete-confirm">
+            <div class="modal__content">
+                <div class="modal__top">Do you want to remove this item from shopping cart?</div>
+                <div class="modal__bot">
+                    <button class="modal__btn btn btn--text btn--outline js-toggle" toggle-target="#delete-confirm">
+                        Cancel
+                    </button>
+                    <button
+                        class="modal__btn modal__btn--delete btn btn--primary btn--no-ml js-toggle"
+                        toggle-target="#delete-confirm"
+                    >
+                        Delete
+                    </button>
+                </div>
+            </div>
+            <div class="modal__overlay js-toggle" toggle-target="#delete-confirm"></div>
+        </div>
+    </body>
+</html>
