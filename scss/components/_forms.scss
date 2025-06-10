@@ -383,6 +383,10 @@
         overflow-y: auto;
         scroll-behavior: contain;
 
+        @supports (-webkit-touch-callout: none) {
+            padding-bottom: 300px;
+        }
+
         @include abstracts.breakpoint(md) {
             max-height: 265px;
         }
