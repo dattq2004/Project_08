@@ -41,7 +41,7 @@
 
         &:checked::before {
             content: url(../icons/checked.svg);
-            filter: var(--navbar-icon-lg-cl);
+            filter: none;
         }
     }
 
