@@ -96,8 +96,9 @@ html {
     // Button
     --btn-text-cl: #1a162e;
 
-    // Modal
-    // --text-hv-cl: #;
+    // Payment
+    --payment-item-bg-cl: #f6f6f6;
+    --cost-checked-cl: #1a162e;
 
     @include abstracts.breakpoint(lg) {
         --header-bg-cl: #fff;

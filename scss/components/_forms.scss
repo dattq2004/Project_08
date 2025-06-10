@@ -101,6 +101,7 @@
         font-weight: 500;
         line-height: 144.444%;
 
+        height: 100%;
         width: 100%;
 
         @include abstracts.breakpoint(md) {
@@ -196,6 +197,18 @@
 
             @include abstracts.breakpoint(sm) {
                 font-size: 1.6rem;
+            }
+        }
+
+        &--medium {
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+            line-height: 144.444%;
+
+            @include abstracts.breakpoint(md) {
+                margin-bottom: 10px;
+                font-size: 1.6rem;
+                line-height: 150%;
             }
         }
     }
@@ -339,7 +352,13 @@
         }
 
         @include abstracts.breakpoint(sm) {
+            margin: 0 auto;
             flex-direction: row-reverse;
+
+            border: 1px solid #ebebeb;
+            border-radius: 6px;
+
+            width: calc(100% - 20px);
         }
 
         &-input {

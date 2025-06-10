@@ -101,6 +101,10 @@ html.dark {
     // Modal
     --text-hv-cl: #000;
 
+    // Payment
+    --payment-item-bg-cl: #292e39;
+    --cost-checked-cl: #b9babe;
+
     --checkout-icon-filter: brightness(0) saturate(100%) invert(78%) sepia(0%) saturate(33%) hue-rotate(273deg)
         brightness(94%) contrast(97%);
 }
