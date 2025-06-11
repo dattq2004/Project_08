@@ -37,7 +37,7 @@
                 <!-- Profile -->
                 <div class="profile-container">
                     <div class="row gy-md-2">
-                        <div class="col-3 col-xl-4 col-lg-5 col-md-12">
+                        <div class="col-3 col-xl-4 d-lg-none">
                             <aside class="profile__sidebar">
                                 <!-- User -->
                                 <div class="profile-user">
@@ -143,202 +143,166 @@
                                 </div>
                             </aside>
                         </div>
-                        <div class="col-9 col-xl-8 col-lg-7 col-md-12">
+                        <div class="col-9 col-xl-8 col-lg-12">
                             <div class="cart-info">
-                                <!-- Wallet -->
-                                <section class="profile-section">
-                                    <h2 class="cart-info__heading">My Wallet</h2>
-                                    <p class="cart-info__desc profile-section__desc">Payment methods</p>
-                                    <div
-                                        class="row row-cols-3 row-cols-xl-2 gy-xl-3 row-cols-lg-1 profile-section__wallet"
-                                    >
-                                        <div class="col">
-                                            <article class="payment-card">
-                                                <img
-                                                    src="./assets/img/card/plane-decor.svg"
-                                                    alt=""
-                                                    class="payment-card__decor"
+                                <h2 class="cart-info__heading">
+                                    <a href="./profile.html">
+                                        <img
+                                            src="./assets/icons/arrow-left.svg"
+                                            alt=""
+                                            class="icon cart-info__arrow-back"
+                                        /> </a
+                                    >Add credit or debit card
+                                </h2>
+                                <form action="" class="form form-card">
+                                    <!-- Name -->
+                                    <div class="form__row">
+                                        <div class="form__group">
+                                            <label class="form__label form__label--medium" for="firstName"
+                                                >First Name</label
+                                            >
+                                            <div class="form__text-input form__text-input--small">
+                                                <input
+                                                    type="text"
+                                                    placeholder="First Name"
+                                                    class="form__input"
+                                                    id="firstName"
+                                                    required
+                                                    autofocus
                                                 />
-                                                <div class="payment-card__top">
-                                                    <img src="./assets/img/card/plane-icon.svg" alt="" />
-                                                    <span class="payment-card__type">FeatherCard</span>
-                                                </div>
-                                                <div class="payment-card__mid">1234 4567 8901 2221</div>
-                                                <div class="payment-card__bot">
-                                                    <div>
-                                                        <p class="payment-card__title">Card Holder</p>
-                                                        <p class="payment-card__detail">Imran Khan</p>
-                                                    </div>
-                                                    <div class="payment-card__expired">
-                                                        <p class="payment-card__title">Expired</p>
-                                                        <p class="payment-card__detail">10/22</p>
-                                                    </div>
-                                                    <img
-                                                        src="./assets/img/card/master-card-icon.svg"
-                                                        alt=""
-                                                        class="payment-card__brand"
-                                                    />
-                                                </div>
-                                            </article>
-                                        </div>
-                                        <div class="col">
-                                            <article class="payment-card" style="--bg-cl: #354151">
                                                 <img
-                                                    src="./assets/img/card/leaf-decor.svg"
+                                                    src="./assets/icons/warning.svg"
                                                     alt=""
-                                                    class="payment-card__decor"
+                                                    class="form__warning-icon"
                                                 />
-                                                <div class="payment-card__top">
-                                                    <img src="./assets/img/card/leaf-icon.svg" alt="" />
-                                                    <span class="payment-card__type">FeatherCard</span>
-                                                </div>
-                                                <div class="payment-card__mid">1234 4567 8901 2221</div>
-                                                <div class="payment-card__bot">
-                                                    <div>
-                                                        <p class="payment-card__title">Card Holder</p>
-                                                        <p class="payment-card__detail">Imran Khan</p>
-                                                    </div>
-                                                    <div class="payment-card__expired">
-                                                        <p class="payment-card__title">Expired</p>
-                                                        <p class="payment-card__detail">10/22</p>
-                                                    </div>
-                                                    <img
-                                                        src="./assets/img/card/master-card-icon.svg"
-                                                        alt=""
-                                                        class="payment-card__brand"
-                                                    />
-                                                </div>
-                                            </article>
+                                            </div>
+                                            <p class="form__warning-text"></p>
                                         </div>
-
-                                        <div class="col">
-                                            <a href="./add-new-card.html">
-                                                <article
-                                                    class="payment-card payment-card--add-new-card"
-                                                    style="--bg-cl: transparent"
-                                                >
-                                                    <img
-                                                        src="./assets/icons/plus.svg"
-                                                        alt=""
-                                                        class="payment-card__plus-icon icon"
-                                                    />
-                                                    <p class="payment-card__desc">Add New Card</p>
-                                                </article>
-                                            </a>
+                                        <div class="form__group">
+                                            <label class="form__label form__label--medium" for="lastName"
+                                                >Last Name</label
+                                            >
+                                            <div class="form__text-input form__text-input--small">
+                                                <input
+                                                    type="text"
+                                                    placeholder="Last Name"
+                                                    class="form__input"
+                                                    id="lastName"
+                                                    required
+                                                />
+                                                <img
+                                                    src="./assets/icons/warning.svg"
+                                                    alt=""
+                                                    class="form__warning-icon"
+                                                />
+                                            </div>
+                                            <p class="form__warning-text"></p>
                                         </div>
                                     </div>
-                                </section>
-                                <!-- Account Info -->
-                                <section class="profile-section">
-                                    <h2 class="cart-info__heading">Account info</h2>
-                                    <p class="cart-info__desc profile-section__desc">
-                                        Addresses, contact information and password
-                                    </p>
-                                    <div class="row row-cols-2 row-cols-xl-1 account-info__row">
-                                        <!-- email -->
-                                        <div class="col">
-                                            <a href="./edit-personal-info.html">
-                                                <article class="account-info">
-                                                    <div class="account-info__icon-wrap">
-                                                        <img
-                                                            src="./assets/icons/message.svg"
-                                                            alt=""
-                                                            class="account-info__icon icon"
-                                                        />
-                                                    </div>
-                                                    <div>
-                                                        <h3 class="account-info__title">Email Address</h3>
-                                                        <p class="account-info__desc">tranquocthanhdat@gmail.com</p>
-                                                    </div>
-                                                </article>
-                                            </a>
-                                        </div>
-                                        <!-- phone -->
-                                        <div class="col">
-                                            <a href="./edit-personal-info.html">
-                                                <article class="account-info">
-                                                    <div class="account-info__icon-wrap">
-                                                        <img
-                                                            src="./assets/icons/phone.svg"
-                                                            alt=""
-                                                            class="account-info__icon icon"
-                                                        />
-                                                    </div>
-                                                    <div>
-                                                        <h3 class="account-info__title">Phone number</h3>
-                                                        <p class="account-info__desc">+84785819692</p>
-                                                    </div>
-                                                </article></a
+                                    <!-- Card -->
+                                    <div class="form__row">
+                                        <div class="form__group">
+                                            <label class="form__label form__label--medium" for="cardNumber"
+                                                >Card Number</label
                                             >
+                                            <div class="form__text-input form__text-input--small">
+                                                <input
+                                                    type="email"
+                                                    placeholder="Card Number"
+                                                    class="form__input"
+                                                    id="cardNumber"
+                                                    required
+                                                />
+                                                <img
+                                                    src="./assets/icons/warning.svg"
+                                                    alt=""
+                                                    class="form__warning-icon"
+                                                />
+                                            </div>
+                                            <p class="form__warning-text"></p>
                                         </div>
-                                        <!-- address -->
-                                        <div class="col">
-                                            <a href="./edit-personal-info.html"
-                                                ><article class="account-info">
-                                                    <div class="account-info__icon-wrap">
-                                                        <img
-                                                            src="./assets/icons/location.svg"
-                                                            alt=""
-                                                            class="account-info__icon icon"
-                                                        />
-                                                    </div>
-                                                    <div>
-                                                        <h3 class="account-info__title">Add an address</h3>
-                                                        <p class="account-info__desc">
-                                                            141 Truong Chinh, An Khe, Thanh Khe, Da Nang
-                                                        </p>
-                                                    </div>
-                                                </article></a
+                                        <div class="form__group">
+                                            <label class="form__label form__label--medium" for="expired"
+                                                >Expiration Date</label
                                             >
+                                            <div class="form__text-input form__text-input--small">
+                                                <input
+                                                    type="text"
+                                                    placeholder="Expiration Date"
+                                                    class="form__input"
+                                                    id="expired"
+                                                    required
+                                                />
+                                                <img
+                                                    src="./assets/icons/warning.svg"
+                                                    alt=""
+                                                    class="form__warning-icon"
+                                                />
+                                            </div>
+                                            <p class="form__warning-text"></p>
                                         </div>
                                     </div>
-                                </section>
-                                <!-- Lists -->
-                                <section class="profile-section">
-                                    <h2 class="cart-info__heading">Lists</h2>
-                                    <p class="cart-info__desc profile-section__desc">2 items - Primary</p>
-                                    <article class="favourite-item">
-                                        <img
-                                            src="./assets/img/product-card/item-1.png"
-                                            alt=""
-                                            class="favourite-item__thumb"
-                                        />
-                                        <div>
-                                            <h3 class="favourite-item__title">
-                                                Coffee Beans - Espresso Arabica and Robusta Beans
-                                            </h3>
-                                            <div class="favourite-item__content">
-                                                <p class="favourite-item__price">$47.00</p>
-                                                <button
-                                                    class="favourite-item__add-to-cart-btn btn btn--primary btn--rounded"
-                                                >
-                                                    Add to cart
-                                                </button>
+                                    <!-- CVV + Phone -->
+                                    <div class="form__row">
+                                        <div class="form__group">
+                                            <label class="form__label form__label--medium" for="cvv">CVV</label>
+                                            <div class="form__text-input form__text-input--small">
+                                                <input
+                                                    type="text"
+                                                    placeholder="123"
+                                                    class="form__input"
+                                                    id="cvv"
+                                                    required
+                                                />
+                                                <img
+                                                    src="./assets/icons/warning.svg"
+                                                    alt=""
+                                                    class="form__warning-icon"
+                                                />
                                             </div>
+                                            <p class="form__warning-text"></p>
                                         </div>
-                                    </article>
-                                    <div class="favourite-item__seperate"></div>
-                                    <article class="favourite-item">
-                                        <img
-                                            src="./assets/img/product-card/item-2.png"
-                                            alt=""
-                                            class="favourite-item__thumb"
-                                        />
-                                        <div>
-                                            <h3 class="favourite-item__title">
-                                                Lavazza Coffee Blends - Try the Italian Espresso
-                                            </h3>
-                                            <div class="favourite-item__content">
-                                                <p class="favourite-item__price">$53.00</p>
-                                                <button
-                                                    class="favourite-item__add-to-cart-btn btn btn--primary btn--rounded"
-                                                >
-                                                    Add to cart
-                                                </button>
+                                        <div class="form__group">
+                                            <label class="form__label form__label--medium" for="phone"
+                                                >Phone Number</label
+                                            >
+                                            <div class="form__text-input form__text-input--small">
+                                                <input
+                                                    type="text"
+                                                    placeholder="Phone Number"
+                                                    class="form__input"
+                                                    id="phone"
+                                                    required
+                                                    minlength="10"
+                                                />
+                                                <img
+                                                    src="./assets/icons/warning.svg"
+                                                    alt=""
+                                                    class="form__warning-icon"
+                                                />
                                             </div>
+                                            <p class="form__warning-text">Phone has at least 10 digits</p>
                                         </div>
-                                    </article>
-                                </section>
+                                    </div>
+                                    <div class="form__group">
+                                        <label for="set-default-card" class="form__label form__label--medium"
+                                            >Card Preferences</label
+                                        >
+                                        <label class="form__checkbox">
+                                            <input
+                                                id="set-default-card"
+                                                type="checkbox"
+                                                class="form__checkbox-input"
+                                                hidden
+                                            />
+                                            <span class="form__checkbox-label">Set as default card</span>
+                                        </label>
+                                    </div>
+                                    <div class="form-card__bot">
+                                        <a href="./profile.html" class="btn btn--text">Cancel</a>
+                                        <button class="btn btn--primary btn--rounded">Save card</button>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>

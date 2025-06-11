@@ -50,6 +50,10 @@
         font-weight: 700;
         line-height: 141.667%;
 
+        display: flex;
+        align-items: center;
+        column-gap: 5px;
+
         @include abstracts.breakpoint(md) {
             font-size: 1.6rem;
             font-weight: 500;
@@ -109,6 +113,10 @@
         line-height: 144.444%;
 
         color: var(--chout-text-cl);
+    }
+
+    &__form-row {
+        flex-direction: row;
     }
 
     &__row {
@@ -210,6 +218,13 @@
         font-size: 1.8rem;
         font-weight: 500;
         line-height: 144.444%;
+    }
+
+    &__arrow-back {
+        width: 43px;
+        padding-right: 15px;
+        position: relative;
+        top: 4px;
     }
 }
 
