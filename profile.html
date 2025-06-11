@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <!-- Script -->
+        <script src="./assets/js/scripts.js"></script>
+        <!-- Style -->
+        <link rel="stylesheet" href="./assets/css/main.css" />
+        <!-- Fonts -->
+        <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="./assets/favicon" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="./assets/favicon/favicon.svg" />
+        <link rel="shortcut icon" href="./assets/favicon/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png" />
+        <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+    </head>
+    <body>
+        <!-- Header -->
+        <header id="header" class="header"></header>
+        <script>
+            load("#header", "./templates/header-logined.html");
+        </script>
+
+        <main class="profile">
+            <div class="container">
+                <!-- Search Bar -->
+                <div class="profile-container">
+                    <div class="search-bar d-none d-md-flex">
+                        <input placeholder="Search for item" type="text" class="search-bar-input" />
+                        <img src="./assets/icons/search.svg" alt="" class="search-bar-icon icon" />
+                    </div>
+                </div>
+
+                <!-- Profile -->
+                <div class="profile-container">
+                    <div class="row gy-md-2">
+                        <div class="col-3 col-xl-4 col-lg-5 col-md-12">
+                            <aside class="profile__sidebar">
+                                <!-- User -->
+                                <div class="profile-user">
+                                    <img src="./assets/img/avatars/avatar-1.jpg" alt="" class="profile-user__avatar" />
+                                    <h1 class="profile-user__name">Tran Quoc Dat</h1>
+                                    <p class="profile-user__desc">Registered: 1th June 2025</p>
+                                </div>
+                                <!-- Menu 1 -->
+                                <div class="profile-menu">
+                                    <h2 class="profile-menu__title">Manage Account</h2>
+                                    <ul class="profile-menu__list">
+                                        <li class="profile-menu__item">
+                                            <a href="#!" class="profile-menu__link">
+                                                <span class="profile-menu__icon">
+                                                    <img src="./assets/icons/profile.svg" alt="" class="icon" />
+                                                </span>
+                                                Personal info
+                                            </a>
+                                        </li>
+                                        <li class="profile-menu__item">
+                                            <a href="#!" class="profile-menu__link">
+                                                <span class="profile-menu__icon">
+                                                    <img src="./assets/icons/location.svg" alt="" class="icon" />
+                                                </span>
+                                                Addresses
+                                            </a>
+                                        </li>
+                                        <li class="profile-menu__item">
+                                            <a href="#!" class="profile-menu__link">
+                                                <span class="profile-menu__icon">
+                                                    <img src="./assets/icons/message.svg" alt="" class="icon" />
+                                                </span>
+                                                Commnunications & privacy
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- Menu 2 -->
+                                <div class="profile-menu">
+                                    <h2 class="profile-menu__title">My items</h2>
+                                    <ul class="profile-menu__list">
+                                        <li class="profile-menu__item">
+                                            <a href="#!" class="profile-menu__link">
+                                                <span class="profile-menu__icon">
+                                                    <img src="./assets/icons/download.svg" alt="" class="icon" />
+                                                </span>
+                                                Reorder
+                                            </a>
+                                        </li>
+                                        <li class="profile-menu__item">
+                                            <a href="#!" class="profile-menu__link">
+                                                <span class="profile-menu__icon">
+                                                    <img src="./assets/icons/heart.svg" alt="" class="icon" />
+                                                </span>
+                                                Lists
+                                            </a>
+                                        </li>
+                                        <li class="profile-menu__item">
+                                            <a href="#!" class="profile-menu__link">
+                                                <span class="profile-menu__icon">
+                                                    <img src="./assets/icons/gift-2.svg" alt="" class="icon" />
+                                                </span>
+                                                Registries
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- Menu 3 -->
+                                <div class="profile-menu">
+                                    <h2 class="profile-menu__title">Subscriptions & plans</h2>
+                                    <ul class="profile-menu__list">
+                                        <li class="profile-menu__item">
+                                            <a href="#!" class="profile-menu__link">
+                                                <span class="profile-menu__icon">
+                                                    <img src="./assets/icons/done.svg" alt="" class="icon" />
+                                                </span>
+                                                Protection plans
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- Menu 4 -->
+                                <div class="profile-menu">
+                                    <h2 class="profile-menu__title">Customer Service</h2>
+                                    <ul class="profile-menu__list">
+                                        <li class="profile-menu__item">
+                                            <a href="#!" class="profile-menu__link">
+                                                <span class="profile-menu__icon">
+                                                    <img src="./assets/icons/information.svg" alt="" class="icon" />
+                                                </span>
+                                                Help
+                                            </a>
+                                        </li>
+                                        <li class="profile-menu__item">
+                                            <a href="#!" class="profile-menu__link">
+                                                <span class="profile-menu__icon">
+                                                    <img src="./assets/icons/danger.svg" alt="" class="icon" />
+                                                </span>
+                                                Terms of Use
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </aside>
+                        </div>
+                        <div class="col-9 col-xl-8 col-lg-7 col-md-12">
+                            <div class="cart-info">
+                                <!-- Wallet -->
+                                <section class="profile-section">
+                                    <h2 class="cart-info__heading">My Wallet</h2>
+                                    <p class="cart-info__desc profile-section__desc">Payment methods</p>
+                                    <div
+                                        class="row row-cols-3 row-cols-xl-2 gy-xl-3 row-cols-lg-1 profile-section__wallet"
+                                    >
+                                        <div class="col">
+                                            <article class="payment-card">
+                                                <img
+                                                    src="./assets/img/card/plane-decor.svg"
+                                                    alt=""
+                                                    class="payment-card__decor"
+                                                />
+                                                <div class="payment-card__top">
+                                                    <img src="./assets/img/card/plane-icon.svg" alt="" />
+                                                    <span class="payment-card__type">FeatherCard</span>
+                                                </div>
+                                                <div class="payment-card__mid">1234 4567 8901 2221</div>
+                                                <div class="payment-card__bot">
+                                                    <div>
+                                                        <p class="payment-card__title">Card Holder</p>
+                                                        <p class="payment-card__detail">Imran Khan</p>
+                                                    </div>
+                                                    <div class="payment-card__expired">
+                                                        <p class="payment-card__title">Expired</p>
+                                                        <p class="payment-card__detail">10/22</p>
+                                                    </div>
+                                                    <img
+                                                        src="./assets/img/card/master-card-icon.svg"
+                                                        alt=""
+                                                        class="payment-card__brand"
+                                                    />
+                                                </div>
+                                            </article>
+                                        </div>
+                                        <div class="col">
+                                            <article class="payment-card" style="--bg-cl: #354151">
+                                                <img
+                                                    src="./assets/img/card/leaf-decor.svg"
+                                                    alt=""
+                                                    class="payment-card__decor"
+                                                />
+                                                <div class="payment-card__top">
+                                                    <img src="./assets/img/card/leaf-icon.svg" alt="" />
+                                                    <span class="payment-card__type">FeatherCard</span>
+                                                </div>
+                                                <div class="payment-card__mid">1234 4567 8901 2221</div>
+                                                <div class="payment-card__bot">
+                                                    <div>
+                                                        <p class="payment-card__title">Card Holder</p>
+                                                        <p class="payment-card__detail">Imran Khan</p>
+                                                    </div>
+                                                    <div class="payment-card__expired">
+                                                        <p class="payment-card__title">Expired</p>
+                                                        <p class="payment-card__detail">10/22</p>
+                                                    </div>
+                                                    <img
+                                                        src="./assets/img/card/master-card-icon.svg"
+                                                        alt=""
+                                                        class="payment-card__brand"
+                                                    />
+                                                </div>
+                                            </article>
+                                        </div>
+
+                                        <div class="col">
+                                            <article
+                                                class="payment-card payment-card--add-new-card"
+                                                style="--bg-cl: transparent"
+                                            >
+                                                <img
+                                                    src="./assets/icons/plus.svg"
+                                                    alt=""
+                                                    class="payment-card__plus-icon icon"
+                                                />
+                                                <p class="payment-card__desc">Add New Card</p>
+                                            </article>
+                                        </div>
+                                    </div>
+                                </section>
+                                <!-- Account Info -->
+                                <section class="profile-section">
+                                    <h2 class="cart-info__heading">Account info</h2>
+                                    <p class="cart-info__desc profile-section__desc">
+                                        Addresses, contact information and password
+                                    </p>
+                                    <div class="row row-cols-2 row-cols-xl-1 account-info__row">
+                                        <!-- email -->
+                                        <div class="col">
+                                            <article class="account-info">
+                                                <div class="account-info__icon-wrap">
+                                                    <img
+                                                        src="./assets/icons/message.svg"
+                                                        alt=""
+                                                        class="account-info__icon icon"
+                                                    />
+                                                </div>
+                                                <div>
+                                                    <h3 class="account-info__title">Email Address</h3>
+                                                    <p class="account-info__desc">tranquocthanhdat@gmail.com</p>
+                                                </div>
+                                            </article>
+                                        </div>
+                                        <!-- phone -->
+                                        <div class="col">
+                                            <article class="account-info">
+                                                <div class="account-info__icon-wrap">
+                                                    <img
+                                                        src="./assets/icons/phone.svg"
+                                                        alt=""
+                                                        class="account-info__icon icon"
+                                                    />
+                                                </div>
+                                                <div>
+                                                    <h3 class="account-info__title">Phone number</h3>
+                                                    <p class="account-info__desc">+84785819692</p>
+                                                </div>
+                                            </article>
+                                        </div>
+                                        <!-- address -->
+                                        <div class="col">
+                                            <article class="account-info">
+                                                <div class="account-info__icon-wrap">
+                                                    <img
+                                                        src="./assets/icons/location.svg"
+                                                        alt=""
+                                                        class="account-info__icon icon"
+                                                    />
+                                                </div>
+                                                <div>
+                                                    <h3 class="account-info__title">Add an address</h3>
+                                                    <p class="account-info__desc">
+                                                        141 Truong Chinh, An Khe, Thanh Khe, Da Nang
+                                                    </p>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                </section>
+                                <!-- Lists -->
+                                <section class="profile-section">
+                                    <h2 class="cart-info__heading">Lists</h2>
+                                    <p class="cart-info__desc profile-section__desc">2 items - Primary</p>
+                                    <article class="favourite-item">
+                                        <img
+                                            src="./assets/img/product-card/item-1.png"
+                                            alt=""
+                                            class="favourite-item__thumb"
+                                        />
+                                        <div>
+                                            <h3 class="favourite-item__title">
+                                                Coffee Beans - Espresso Arabica and Robusta Beans
+                                            </h3>
+                                            <div class="favourite-item__content">
+                                                <p class="favourite-item__price">$47.00</p>
+                                                <button
+                                                    class="favourite-item__add-to-cart-btn btn btn--primary btn--rounded"
+                                                >
+                                                    Add to cart
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </article>
+                                    <div class="favourite-item__seperate"></div>
+                                    <article class="favourite-item">
+                                        <img
+                                            src="./assets/img/product-card/item-2.png"
+                                            alt=""
+                                            class="favourite-item__thumb"
+                                        />
+                                        <div>
+                                            <h3 class="favourite-item__title">
+                                                Lavazza Coffee Blends - Try the Italian Espresso
+                                            </h3>
+                                            <div class="favourite-item__content">
+                                                <p class="favourite-item__price">$53.00</p>
+                                                <button
+                                                    class="favourite-item__add-to-cart-btn btn btn--primary btn--rounded"
+                                                >
+                                                    Add to cart
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- Footer -->
+        <footer id="footer"></footer>
+        <script>
+            load("#footer", "./templates/footer.html");
+        </script>
+
+        <!-- Box Modal Form Address Input -->
+        <div class="modal modal--large hide" id="add-new-address">
+            <div class="modal__content">
+                <form action="./index-logined.html" class="form" autocomplete="off">
+                    <div class="modal__top modal__top--no-mt">Add new address</div>
+                    <div class="modal__mid">
+                        <div class="form__row">
+                            <!-- Country -->
+                            <div class="form__group">
+                                <label class="form__label--small" for="country">Country</label>
+                                <div class="form__text-input form__text-input--small">
+                                    <input
+                                        type="text"
+                                        placeholder="Country"
+                                        name="country"
+                                        id="country"
+                                        class="form__input form__input--small js-toggle"
+                                        toggle-target="#country-box"
+                                    />
+                                    <img src="./assets/icons/warning.svg" alt="" class="form__warning-icon" />
+                                    <div class="form__search-dialog hide" id="country-box">
+                                        <button
+                                            class="form__close-dialog d-none d-sm-block js-toggle"
+                                            toggle-target="#country-box"
+                                        >
+                                            &times
+                                        </button>
+                                        <div class="form__search">
+                                            <input
+                                                type="text"
+                                                placeholder="Search country"
+                                                class="form__search-input"
+                                            />
+                                            <img
+                                                src="./assets/icons/search.svg"
+                                                alt=""
+                                                class="form__search-icon icon"
+                                            />
+                                        </div>
+                                        <ul class="form__options-list">
+                                            <li class="form__option">Hà Nội</li>
+                                            <li class="form__option">Hồ Chí Minh</li>
+                                            <li class="form__option form__option--current">Đà Nẵng</li>
+                                            <li class="form__option">Hải Phòng</li>
+                                            <li class="form__option">Cần Thơ</li>
+                                            <li class="form__option">An Giang</li>
+                                            <li class="form__option">Bà Rịa - Vũng Tàu</li>
+                                            <li class="form__option">Bạc Liêu</li>
+                                            <li class="form__option">Bắc Giang</li>
+                                            <li class="form__option">Bắc Kạn</li>
+                                            <li class="form__option">Bắc Ninh</li>
+                                            <li class="form__option">Bến Tre</li>
+                                            <li class="form__option">Bình Định</li>
+                                            <li class="form__option">Bình Dương</li>
+                                            <li class="form__option">Bình Phước</li>
+                                            <li class="form__option">Bình Thuận</li>
+                                            <li class="form__option">Cà Mau</li>
+                                            <li class="form__option">Cao Bằng</li>
+                                            <li class="form__option">Đắk Lắk</li>
+                                            <li class="form__option">Đắk Nông</li>
+                                            <li class="form__option">Điện Biên</li>
+                                            <li class="form__option">Đồng Nai</li>
+                                            <li class="form__option">Đồng Tháp</li>
+                                            <li class="form__option">Gia Lai</li>
+                                            <li class="form__option">Hà Giang</li>
+                                            <li class="form__option">Hà Nam</li>
+                                            <li class="form__option">Hà Tĩnh</li>
+                                            <li class="form__option">Hải Dương</li>
+                                            <li class="form__option">Hậu Giang</li>
+                                            <li class="form__option">Hòa Bình</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- City -->
+                            <div class="form__group form__group--no-mt">
+                                <label class="form__label--small" for="city">City</label>
+                                <div class="form__text-input form__text-input--small">
+                                    <input
+                                        type="text"
+                                        placeholder="City"
+                                        name="city"
+                                        class="form__input form__input--small"
+                                        required
+                                    />
+                                    <img src="./assets/icons/warning.svg" alt="" class="form__warning-icon" />
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Phone -->
+                        <div class="form__group">
+                            <label class="form__label--small" for="phone">Phone</label>
+                            <div class="form__text-input form__text-input--small" style="max-width: 300px">
+                                <input
+                                    type="text"
+                                    placeholder="Phone number"
+                                    class="form__input form__input--small"
+                                    id="phone"
+                                    required
+                                    minlength="10"
+                                />
+                                <img src="./assets/icons/warning.svg" alt="" class="form__warning-icon" />
+                            </div>
+                            <p class="form__warning-text">Password must be at least 10 characters</p>
+                        </div>
+                        <!-- Name  -->
+                        <div class="form__group">
+                            <label class="form__label--small" for="name">Name Receiver</label>
+                            <div class="form__text-input form__text-input--small" style="max-width: 600px">
+                                <input
+                                    type="text"
+                                    placeholder="Name receiver"
+                                    id="name"
+                                    class="form__input form__input--small"
+                                    required
+                                />
+                                <img src="./assets/icons/warning.svg" alt="" class="form__warning-icon" />
+                            </div>
+                        </div>
+                        <!-- Text Area -->
+                        <div class="form__group">
+                            <label class="form__label--small" for="address">Address Details</label>
+                            <div class="form__text-area">
+                                <textarea
+                                    name="address"
+                                    id="address"
+                                    placeholder="Address Details"
+                                    class="form__text-area-input"
+                                    required
+                                ></textarea>
+                            </div>
+                        </div>
+                        <div class="form__group form__group--inline">
+                            <label class="form__checkbox">
+                                <input type="checkbox" class="form__checkbox-input" hidden />
+                                <span class="form__checkbox-label">Set as default card</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="modal__bot">
+                        <button class="modal__btn btn btn--text js-toggle" toggle-target="#add-new-address">
+                            Cancel
+                        </button>
+                        <button
+                            class="modal__btn btn btn--primary btn--no-ml js-toggle form__submit-btn"
+                            toggle-target="#add-new-address"
+                        >
+                            Add address
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <div class="modal__overlay js-toggle" toggle-target="#add-new-address"></div>
+        </div>
+    </body>
+</html>

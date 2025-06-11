@@ -1,0 +1,74 @@
+@use "../abstracts";
+
+.favourite-item {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+
+    &__thumb {
+        width: 151px;
+        height: 108px;
+        object-fit: contain;
+
+        @include abstracts.breakpoint(lg) {
+            width: 80px;
+        }
+    }
+
+    &__title {
+        font-size: 1.5rem;
+        font-weight: 500;
+        line-height: 146.667%;
+
+        @include abstracts.breakpoint(md) {
+            font-size: 1.4rem;
+            line-height: 142.857%;
+        }
+    }
+
+    &__content {
+        margin-top: 10px;
+
+        display: flex;
+        align-items: center;
+        column-gap: 20px;
+
+        @include abstracts.breakpoint(sm) {
+            flex-direction: column;
+            align-items: flex-start;
+            row-gap: 10px;
+        }
+    }
+
+    &__price {
+        font-size: 2.2rem;
+        font-weight: 500;
+        line-height: 145.455%;
+
+        @include abstracts.breakpoint(md) {
+            font-size: 1.8rem;
+            line-height: 144.444%;
+        }
+    }
+
+    &__add-to-cart-btn {
+        font-size: 1.5rem;
+        font-weight: 500;
+        line-height: 146.667%;
+
+        @include abstracts.breakpoint(md) {
+            font-size: 1.4rem;
+            line-height: 142.857%;
+        }
+    }
+
+    &__seperate {
+        margin: 20px 0;
+        height: 1px;
+        background: #d2d1d6;
+
+        @include abstracts.breakpoint(md) {
+            margin: 16px 0;
+        }
+    }
+}

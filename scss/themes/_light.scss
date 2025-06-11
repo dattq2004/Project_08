@@ -100,6 +100,12 @@ html {
     --payment-item-bg-cl: #f6f6f6;
     --cost-checked-cl: #1a162e;
 
+    // Profie
+    --asidebar-bg-cl: #fff;
+    --asidebar-shadow-cl: rgba(237, 237, 246, 0.2);
+    --asidebar-link-hv-cl: #ebebeb;
+    --account-info-bg-cl: #f6f6f6;
+
     @include abstracts.breakpoint(lg) {
         --header-bg-cl: #fff;
     }

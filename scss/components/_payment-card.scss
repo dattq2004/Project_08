@@ -1,0 +1,79 @@
+@use "../abstracts";
+
+.payment-card {
+    position: relative;
+    z-index: 0;
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+    background-color: var(--bg-cl, #1e2e69);
+
+    &__decor {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+    }
+
+    &__top {
+        display: flex;
+        align-items: center;
+        column-gap: 6px;
+    }
+
+    &__type {
+        font-size: 1.4rem;
+        font-weight: 500;
+        line-height: 142.857%;
+    }
+
+    &__mid {
+        margin-top: 37px;
+
+        font-size: 1.8rem;
+        font-weight: 500;
+        line-height: 144.444%;
+    }
+
+    &__bot {
+        margin-top: 20px;
+        display: flex;
+    }
+
+    &__title {
+        font-size: 0.8rem;
+        font-weight: 500;
+        line-height: 175%;
+    }
+
+    &__detail {
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 140%;
+    }
+
+    &__expired {
+        margin-left: 40px;
+    }
+
+    &__brand {
+        margin-left: auto;
+    }
+
+    &--add-new-card {
+        height: 171px;
+        border: 1px dashed #d2d1d6;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 14px;
+    }
+
+    &__desc {
+        font-size: 1.4rem;
+        font-weight: 500;
+        line-height: 142.857%;
+        color: #d2d1d6;
+    }
+}
