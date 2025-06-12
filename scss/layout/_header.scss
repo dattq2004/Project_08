@@ -420,3 +420,34 @@
         line-height: 146.667%;
     }
 }
+
+.top-settings {
+    position: relative;
+    height: 50px;
+    padding: 15px;
+}
+
+.setting-dropdown {
+    right: 0;
+    width: 120px !important;
+}
+
+.setting {
+    padding: 15px;
+    text-align: right;
+
+    &__heading {
+        font-size: 1.8rem;
+        font-weight: 600;
+    }
+
+    &__seperate {
+        margin: 10px 0;
+    }
+
+    &__title {
+        margin-top: 10px;
+        font-size: 1.6rem;
+        line-height: 1.5;
+    }
+}

@@ -1942,6 +1942,34 @@ html.dark {
   line-height: 146.667%;
 }
 
+.top-settings {
+  position: relative;
+  height: 50px;
+  padding: 15px;
+}
+
+.setting-dropdown {
+  right: 0;
+  width: 120px !important;
+}
+
+.setting {
+  padding: 15px;
+  text-align: right;
+}
+.setting__heading {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.setting__seperate {
+  margin: 10px 0;
+}
+.setting__title {
+  margin-top: 10px;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
 .logo {
   display: inline-flex;
   align-items: center;
