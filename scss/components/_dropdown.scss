@@ -30,6 +30,7 @@
             top: -13px;
             left: var(--arrow-left-pos);
             transform: translateX(-50%);
+            filter: var(--dropdown-icon-cl);
         }
 
         @include abstracts.breakpoint(lg) {

@@ -57,8 +57,6 @@
     }
 
     @include abstracts.breakpoint(lg) {
-        // display: none;
-        // flex-direction: column;
         position: fixed;
         inset: 0 50% 0 0;
 

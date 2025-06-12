@@ -1412,6 +1412,8 @@ html {
   --border-right-cl: #d2d1d6;
   --icon-2-cl: brightness(0) saturate(100%) invert(9%) sepia(8%) saturate(4425%) hue-rotate(210deg) brightness(90%)
       contrast(97%);
+  --dropdown-icon-cl: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(324deg)
+      brightness(108%) contrast(101%);
   --cate-item-bg-cl: #eee;
   --cate-text-heading-cl: #000;
   --cate-text-desc-cl: #1a162e;
@@ -1506,6 +1508,8 @@ html.dark {
   --icon-2-cl: brightness(0) saturate(100%) invert(100%) sepia(41%) saturate(519%) hue-rotate(179deg) brightness(101%)
       contrast(97%);
   --dropdown-text-cl: #b9babe;
+  --dropdown-icon-cl: brightness(0) saturate(100%) invert(17%) sepia(30%) saturate(410%) hue-rotate(185deg)
+      brightness(95%) contrast(89%);
   --cate-item-bg-cl: #171c28;
   --cate-text-heading-cl: #fff;
   --cate-text-desc-cl: #fff;
@@ -1978,6 +1982,7 @@ html.dark {
   top: -13px;
   left: var(--arrow-left-pos);
   transform: translateX(-50%);
+  filter: var(--dropdown-icon-cl);
 }
 @media (max-width: 991.98px) {
   .dropdown__inner {
