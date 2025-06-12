@@ -1,0 +1,45 @@
+@use "../abstracts";
+
+.user-menu {
+    padding: 20px;
+
+    &__top {
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+
+        @include abstracts.breakpoint(md) {
+            column-gap: 8px;
+        }
+    }
+
+    &__avatar {
+        min-width: 50px;
+        height: 50px;
+        border-radius: 8px;
+
+        @include abstracts.breakpoint(md) {
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+    &__name {
+        font-size: 1.8rem;
+        font-weight: 500;
+    }
+
+    &__user-name {
+        margin-top: 6px;
+        font-size: 1.6rem;
+    }
+
+    &__title {
+        margin: 20px 0;
+        font-size: 1.6rem;
+    }
+
+    &__settings {
+        margin-top: 20px;
+    }
+}

@@ -1,0 +1,147 @@
+@use "../abstracts";
+
+.footer {
+    background-color: var(--header-bg-cl);
+    padding: 30px;
+    &__row {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 30px;
+
+        @include abstracts.breakpoint(lg) {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, auto);
+            row-gap: 30px;
+        }
+
+        @include abstracts.breakpoint(md) {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: repeat(3, auto);
+        }
+
+        @include abstracts.breakpoint(sm) {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(4, auto);
+        }
+    }
+
+    &__col:first-child {
+        @include abstracts.breakpoint(md) {
+            grid-column: 1 / -1;
+        }
+    }
+
+    &__title {
+        margin-bottom: 30px;
+
+        font-size: 1.8rem;
+        font-weight: 600;
+        line-height: 144.444%;
+
+        @include abstracts.breakpoint(md) {
+            margin-bottom: 15px;
+        }
+    }
+
+    &__desc {
+        font-size: 1.6rem;
+        line-height: 150%;
+    }
+
+    &__bot {
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+
+        &-icon {
+            width: 24px;
+            height: 24px;
+            object-fit: contain;
+        }
+    }
+
+    &__payment-img-wrap {
+        margin-top: 20px;
+        display: flex;
+
+        @include abstracts.breakpoint(md) {
+            margin-bottom: 10px;
+        }
+    }
+
+    &__payment-link {
+        padding: 5px 15px 5px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__payment-img {
+        width: 35px;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 6px;
+    }
+
+    &__item {
+        padding: 5px 0;
+
+        @include abstracts.breakpoint(md) {
+            padding: 8px 0;
+        }
+    }
+
+    &__link {
+        font-size: 1.6rem;
+        line-height: 150%;
+
+        &:hover {
+            color: #0071dc;
+        }
+    }
+
+    &__address {
+        display: flex;
+        column-gap: 10px;
+
+        &-icon {
+            margin-top: 3px;
+            width: 20px;
+            height: 20px;
+            object-fit: cover;
+        }
+    }
+
+    &__social {
+        margin-top: 15px;
+        display: flex;
+        align-items: center;
+
+        &-link {
+            padding: 5px 8px 5px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &-icon {
+            width: 24px;
+            height: 24px;
+            object-fit: contain;
+        }
+    }
+}
+
+.contact-item {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+
+    &__icon {
+        width: 20px;
+        height: 20px;
+        object-fit: contain;
+    }
+}
