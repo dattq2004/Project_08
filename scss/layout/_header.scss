@@ -425,6 +425,10 @@
     position: relative;
     height: 50px;
     padding: 15px;
+
+    &:hover .setting-dropdown {
+        display: block;
+    }
 }
 
 .setting-dropdown {
